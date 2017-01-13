@@ -1,0 +1,4 @@
+line_length: 200
+
+disabled_rules:
+ - force_cast

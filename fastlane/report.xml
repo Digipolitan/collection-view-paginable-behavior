@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="00: import_from_git" time="1.280807">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="01: import_from_git" time="1.286879">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="02: import_from_git" time="1.425172">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="03: import_from_git" time="1.189748">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="04: prepare_lane_options" time="0.000727">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="05: Switch to appfile_init lane" time="0.000418">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="06: prepare_lane_options" time="0.000456">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="07: user_validation" time="36.684055">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: get_project_info" time="0.000819">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: update_app_identifier" time="0.17028">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: increment_version_number" time="1.536607">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="11: increment_build_number" time="1.019256">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="12: get_project_info" time="0.000885">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="13: clean_xcodeproj_configuration" time="0.092166">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="14: clean_xcworkspace_configuration" time="0.019168">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="15: podfile_init" time="0.000864">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="16: git_get_remote_info" time="0.012078">
+        
+          <failure message="/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane/lib/fastlane/actions/actions_helper.rb:48:in `execute_action'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane/lib/fastlane/runner.rb:217:in `block in execute_action'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane/lib/fastlane/runner.rb:213:in `chdir'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane/lib/fastlane/runner.rb:213:in `execute_action'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane/lib/fastlane/runner.rb:135:in `trigger_action_by_name'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane/lib/fastlane/fast_file.rb:146:in `method_missing'&#10;../../../../../../var/folders/wz/zd5wpf5d4zl7frxpp7nqjwmw0000gn/T/fl_clone20170113-1886-319lxi/fastlane-ios-framework/fastlane/Fastfile:79:in `block in parsing_binding'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane/lib/fastlane/lane_manager.rb:52:in `cruise_lane'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane/lib/fastlane/command_line_handler.rb:30:in `handle'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane/lib/fastlane/commands_generator.rb:96:in `block (2 levels) in run'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/commander-4.4.3/lib/commander/command.rb:178:in `call'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/commander-4.4.3/lib/commander/command.rb:153:in `run'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/commander-4.4.3/lib/commander/runner.rb:446:in `run_active_command'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:38:in `run!'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/commander-4.4.3/lib/commander/delegates.rb:15:in `run!'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane/lib/fastlane/commands_generator.rb:293:in `run'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane/lib/fastlane/commands_generator.rb:36:in `start'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/fastlane/lib/fastlane/cli_tools_distributor.rb:59:in `take_off'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/gems/fastlane-2.8.0/bin/fastlane:15:in `&lt;top (required)&gt;'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/bin/fastlane:23:in `load'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/bin/fastlane:23:in `&lt;main&gt;'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'&#10;/Users/blackrain/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `&lt;main&gt;'&#10;&#10;Exit status of command 'git config --get remote.origin.url' was 1 instead of 0.&#10;" />
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>
