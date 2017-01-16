@@ -27,23 +27,35 @@ class LoadingFooterView: UICollectionReusableView {
 		// Initialization code
 	}
 
-	func set(moreToLoad: Bool) {
-		self.loaderActivity.stopAnimating()
-		self.loaderActivity.isHidden = true
+	func set(statuses: (fetching:Bool, done: Bool, error: Error?)) {
+		self.btnLoadMore.isHidden = true
+		let title = statuses.error == nil ? "Load more" : "retry"
+		self.btnLoadMore.setTitle(title, for: .normal)
+		self.lblLoadedCount.isHidden = true
 
-		guard moreToLoad else {
-			self.btnLoadMore.isHidden = true
-			self.lblLoadedCount.isHidden = false
+
+		if statuses.fetching {
+			self.loaderActivity.startAnimating()
+			return;
+		}
+		else {
+			self.loaderActivity.stopAnimating()
+		}
+
+		if statuses.error != nil {
+			self.btnLoadMore.isHidden = false
 			return
 		}
 
-		self.btnLoadMore.isHidden = false
-		self.lblLoadedCount.isHidden = true
-	}
+		if statuses.done {
+			self.loaderActivity.stopAnimating()
+			self.lblLoadedCount.isHidden = false
+			return;
+		}
 
-	func set(error: Error?) {
-		let title = error == nil ? "Load more" : "retry"
-		self.btnLoadMore.setTitle(title, for: .normal)
+		if !statuses.fetching {
+			self.btnLoadMore.isHidden = false
+		}
 	}
 
 	func set(indexPath: IndexPath) {

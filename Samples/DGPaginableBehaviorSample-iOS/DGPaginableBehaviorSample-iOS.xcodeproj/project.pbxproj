@@ -24,10 +24,11 @@
 		AE8D8AC11E28FAE000C42CB1 /* UserItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8D8ABA1E28FAE000C42CB1 /* UserItemCell.xib */; };
 		AE8D8AC71E291BA200C42CB1 /* LoadingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8D8AC51E291BA200C42CB1 /* LoadingFooterView.swift */; };
 		AE8D8AC81E291BA200C42CB1 /* LoadingFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8D8AC61E291BA200C42CB1 /* LoadingFooterView.xib */; };
+		AE9E8E4F1E2D06F000009A1E /* LoadErrorAutomaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9E8E4E1E2D06F000009A1E /* LoadErrorAutomaticViewController.swift */; };
 		AED3D3B51E2CB8B00008FFD8 /* CustomLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3D3B41E2CB8B00008FFD8 /* CustomLayoutViewController.swift */; };
 		AED3D3B71E2CB8CC0008FFD8 /* ClassicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3D3B61E2CB8CC0008FFD8 /* ClassicViewController.swift */; };
 		AED3D3B91E2CB8DB0008FFD8 /* ManualModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3D3B81E2CB8DB0008FFD8 /* ManualModeViewController.swift */; };
-		AED3D3BB1E2CB8F00008FFD8 /* LoadingErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3D3BA1E2CB8F00008FFD8 /* LoadingErrorViewController.swift */; };
+		AED3D3BB1E2CB8F00008FFD8 /* LoadingErrorManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3D3BA1E2CB8F00008FFD8 /* LoadingErrorManualViewController.swift */; };
 		AED3D3BD1E2CB90C0008FFD8 /* MultipleSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3D3BC1E2CB90C0008FFD8 /* MultipleSectionsViewController.swift */; };
 		AED3D3C01E2CB9A70008FFD8 /* RawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED3D3BF1E2CB9A70008FFD8 /* RawViewController.swift */; };
 /* End PBXBuildFile section */
@@ -70,10 +71,11 @@
 		AE8D8ABA1E28FAE000C42CB1 /* UserItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserItemCell.xib; sourceTree = "<group>"; };
 		AE8D8AC51E291BA200C42CB1 /* LoadingFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingFooterView.swift; sourceTree = "<group>"; };
 		AE8D8AC61E291BA200C42CB1 /* LoadingFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingFooterView.xib; sourceTree = "<group>"; };
+		AE9E8E4E1E2D06F000009A1E /* LoadErrorAutomaticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadErrorAutomaticViewController.swift; sourceTree = "<group>"; };
 		AED3D3B41E2CB8B00008FFD8 /* CustomLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLayoutViewController.swift; sourceTree = "<group>"; };
 		AED3D3B61E2CB8CC0008FFD8 /* ClassicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicViewController.swift; sourceTree = "<group>"; };
 		AED3D3B81E2CB8DB0008FFD8 /* ManualModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualModeViewController.swift; sourceTree = "<group>"; };
-		AED3D3BA1E2CB8F00008FFD8 /* LoadingErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingErrorViewController.swift; sourceTree = "<group>"; };
+		AED3D3BA1E2CB8F00008FFD8 /* LoadingErrorManualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingErrorManualViewController.swift; sourceTree = "<group>"; };
 		AED3D3BC1E2CB90C0008FFD8 /* MultipleSectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleSectionsViewController.swift; sourceTree = "<group>"; };
 		AED3D3BF1E2CB9A70008FFD8 /* RawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,7 +147,8 @@
 		AE6381691E293AA400EC53A4 /* LoadingError */ = {
 			isa = PBXGroup;
 			children = (
-				AED3D3BA1E2CB8F00008FFD8 /* LoadingErrorViewController.swift */,
+				AE9E8E4D1E2D06CB00009A1E /* automatic */,
+				AE9E8E4C1E2D06C600009A1E /* manual */,
 			);
 			name = LoadingError;
 			sourceTree = "<group>";
@@ -209,6 +212,22 @@
 				A30D640D1E0D73B300A3CE45 /* OriginalViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AE9E8E4C1E2D06C600009A1E /* manual */ = {
+			isa = PBXGroup;
+			children = (
+				AED3D3BA1E2CB8F00008FFD8 /* LoadingErrorManualViewController.swift */,
+			);
+			name = manual;
+			sourceTree = "<group>";
+		};
+		AE9E8E4D1E2D06CB00009A1E /* automatic */ = {
+			isa = PBXGroup;
+			children = (
+				AE9E8E4E1E2D06F000009A1E /* LoadErrorAutomaticViewController.swift */,
+			);
+			name = automatic;
 			sourceTree = "<group>";
 		};
 		AED3D3BE1E2CB96D0008FFD8 /* Raw */ = {
@@ -363,9 +382,10 @@
 				AED3D3B91E2CB8DB0008FFD8 /* ManualModeViewController.swift in Sources */,
 				AE8D8AC71E291BA200C42CB1 /* LoadingFooterView.swift in Sources */,
 				AE8D8ABC1E28FAE000C42CB1 /* LoadingItemCell.swift in Sources */,
-				AED3D3BB1E2CB8F00008FFD8 /* LoadingErrorViewController.swift in Sources */,
+				AED3D3BB1E2CB8F00008FFD8 /* LoadingErrorManualViewController.swift in Sources */,
 				AED3D3C01E2CB9A70008FFD8 /* RawViewController.swift in Sources */,
 				AE8D8AC01E28FAE000C42CB1 /* UserItemCell.swift in Sources */,
+				AE9E8E4F1E2D06F000009A1E /* LoadErrorAutomaticViewController.swift in Sources */,
 				AED3D3BD1E2CB90C0008FFD8 /* MultipleSectionsViewController.swift in Sources */,
 				A30D640F1E0D73B300A3CE45 /* OriginalViewController.swift in Sources */,
 				AE8D8ABE1E28FAE000C42CB1 /* ReusableView.swift in Sources */,

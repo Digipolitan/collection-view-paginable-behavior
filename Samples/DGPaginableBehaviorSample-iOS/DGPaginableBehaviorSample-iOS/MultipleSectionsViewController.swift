@@ -68,7 +68,7 @@ extension MultipleSectionsViewController: UICollectionViewDataSource {
 		}
 
 		let footer: LoadingFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: LoadingFooterView.Identifier, for: indexPath) as! LoadingFooterView
-		footer.set(moreToLoad: !self.behavior.statusesForSection(indexPath.section).done)
+		footer.set(statuses: self.behavior.statusesForSection(indexPath.section))
 		footer.set(indexPath: indexPath)
 		footer.delegate = self
 		return footer

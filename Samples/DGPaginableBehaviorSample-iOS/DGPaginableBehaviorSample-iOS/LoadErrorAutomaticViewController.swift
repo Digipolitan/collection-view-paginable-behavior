@@ -1,5 +1,5 @@
 //
-//  LoadingErrorViewController.swift
+//  LoadErrorManualViewController.swift
 //  DGPaginableBehaviorSample-iOS
 //
 //  Created by Julien Sarazin on 16/01/2017.
@@ -7,33 +7,30 @@
 //
 
 import UIKit
+import UIKit
 import DGPaginableBehavior
 
-class LoadingErrorViewController: OriginalViewController {
+class LoadingErrorAutomaticViewController: OriginalViewController {
 	var users: [User] = [User]()
 	let behavior: DGPaginableBehavior = DGPaginableBehavior()
 	var tries: Int = 0
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		self.setManualMode()
 		self.collectionView.delegate	= self.behavior
 		self.collectionView.dataSource	= self
 		self.behavior.delegate = self
+		self.behavior.fetchNext(0) { (_) in
+			self.collectionView.reloadData()
+		}
 	}
 
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 	}
-
-	func setManualMode() {
-		self.behavior.set(options: [
-			.automaticFetch: false
-			])
-	}
 }
 
-extension LoadingErrorViewController: UICollectionViewDataSource {
+extension LoadingErrorAutomaticViewController: UICollectionViewDataSource {
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return self.users.count
 	}
@@ -47,15 +44,14 @@ extension LoadingErrorViewController: UICollectionViewDataSource {
 	func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
 		let footer: LoadingFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: LoadingFooterView.Identifier, for: indexPath) as! LoadingFooterView
 		let statuses = self.behavior.statusesForSection(indexPath.section)
-		footer.set(moreToLoad: !statuses.done)
+		footer.set(statuses: statuses)
 		footer.set(indexPath: indexPath)
-		footer.set(error: statuses.error)
 		footer.delegate = self
 		return footer
 	}
 }
 
-extension LoadingErrorViewController: DGPaginableBehaviorDelegate {
+extension LoadingErrorAutomaticViewController: DGPaginableBehaviorDelegate {
 
 	// MARK: UICollectionViewFlowDelegate
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -68,7 +64,7 @@ extension LoadingErrorViewController: DGPaginableBehaviorDelegate {
 
 	// MARK: Paginable Behavior
 	func paginableBehavior(_ paginableBehavior: DGPaginableBehavior, countPerPageInSection section: Int) -> Int {
-		return 9
+		return 5
 	}
 
 	func paginableBehavior(_ paginableBehavior: DGPaginableBehavior, fetchDataFrom indexPath: IndexPath, with count: Int, completion: @escaping (Error?, Int) -> Void) {
@@ -77,13 +73,12 @@ extension LoadingErrorViewController: DGPaginableBehaviorDelegate {
 		DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
 			print("fetching \(count) items from (\(indexPath.section), (\(indexPath.row))")
 
-			// Simulating erros for the 1st and 2nd attempt
-			guard self.tries > 2 else {
+			guard self.tries == 3 || self.tries % 2 == 0 else {
 				let error = NSError(domain: "fake.error.domain", code: 0, userInfo: ["key": "some fake information"])
 				completion(error, 0)
 				return
 			}
-			
+
 			let results = User.stub(from: indexPath.row, with: count)
 			self.users.append(contentsOf: results)
 			completion(nil, results.count)
@@ -91,7 +86,7 @@ extension LoadingErrorViewController: DGPaginableBehaviorDelegate {
 	}
 }
 
-extension LoadingErrorViewController: LoadingFooterViewDelegate {
+extension LoadingErrorAutomaticViewController: LoadingFooterViewDelegate {
 	func footer(_ footer: LoadingFooterView, loadMoreFromIndexPath indexPath: IndexPath) {
 		self.behavior.fetchNext(indexPath.section) { (_) in
 			self.collectionView.reloadSections([indexPath.section])
