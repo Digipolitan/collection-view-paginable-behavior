@@ -12,7 +12,6 @@ class UserItemCell: UICollectionViewCell {
 	@IBOutlet weak var nameLabel: UILabel!
 	@IBOutlet weak var companyLabel: UILabel!
 
-	var indexPath: IndexPath?
 	static let Identifier = "UserItemCell"
 
     override func awakeFromNib() {
@@ -23,10 +22,5 @@ class UserItemCell: UICollectionViewCell {
 	func set(user: User) {
 		self.nameLabel.text = "\(user.firstName) \(user.lastName)"
 		self.companyLabel.text = user.company
-		if (self.indexPath?.section)! % 2 == 0 {
-			self.contentView.backgroundColor = .red
-		} else {
-			self.contentView.backgroundColor = .blue
-		}
 	}
 }

@@ -19,6 +19,8 @@ end
 ## Samples targets
 abstract_target 'Samples' do
 	use_frameworks!
+
+	pod 'DGCollectionViewGridLayout'
 	target 'DGPaginableBehaviorSample-iOS' do
 		project 'Samples/DGPaginableBehaviorSample-iOS/DGPaginableBehaviorSample-iOS'
 		platform :ios, '8.0'

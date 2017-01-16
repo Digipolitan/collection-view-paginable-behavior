@@ -32,7 +32,8 @@ class User: NSObject {
 		User(firstName: "foo", lastName: "bar", company: "bat (16)"),
 		User(firstName: "foo", lastName: "bar", company: "bae (17)"),
 		User(firstName: "foo", lastName: "bar", company: "baa (18)"),
-		User(firstName: "foo", lastName: "bar", company: "bad (19)")
+		User(firstName: "foo", lastName: "bar", company: "bad (19)"),
+		User(firstName: "foo", lastName: "bar", company: "bad (20)")
 	]
 
 	convenience init(firstName: String, lastName: String, company: String) {

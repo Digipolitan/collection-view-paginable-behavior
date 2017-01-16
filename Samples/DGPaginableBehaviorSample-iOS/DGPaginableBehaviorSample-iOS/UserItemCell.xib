@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserItemCell" id="gTV-IL-0wX" customClass="UserItemCell" customModule="DGGridCollectionViewControllerSample_iOS" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserItemCell" id="gTV-IL-0wX" customClass="UserItemCell" customModule="DGPaginableBehaviorSample_iOS" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="126" height="106"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -36,7 +36,7 @@
                     </label>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="0.41774877537608851" green="0.63611080544699272" blue="0.8014086788" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color key="backgroundColor" red="0.30425780112189832" green="0.66634087212405568" blue="0.67986965673575128" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="cnn-JD-oL2" firstAttribute="top" secondItem="1dQ-JU-fkw" secondAttribute="bottom" constant="10" id="4wj-GI-U6a"/>
                 <constraint firstItem="cnn-JD-oL2" firstAttribute="width" secondItem="1dQ-JU-fkw" secondAttribute="width" id="K5h-Qz-vwC"/>

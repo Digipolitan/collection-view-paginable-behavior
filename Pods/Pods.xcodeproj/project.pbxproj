@@ -8,15 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0146B88B4C766E29D5190FB54D2E7D7E /* Pods-Tests-DGPaginableBehaviorTests-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 575C55D9EEB78B84FF4EEDFEC5E4D71C /* Pods-Tests-DGPaginableBehaviorTests-iOS-dummy.m */; };
+		0D60C8EE118AA8DD1E50D7CF8E2DFFA7 /* DGGridCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33A11951A19C2AFE82C4A705D60A1E3 /* DGGridCollectionFlowLayout.swift */; };
+		212156FEC1EF3FD895C0FB0C4F8D77AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		23D5B8CCE460B98F60F9524846A3A835 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		26F23F81B3F9E2EC072FDC359E569E69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		28F81F6B5C840E12E892AF36B38256FC /* Pods-Samples-DGPaginableBehaviorSample-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99137811750712FE5C28B1A2998F720D /* Pods-Samples-DGPaginableBehaviorSample-iOS-dummy.m */; };
 		565C1129AFBB62E21B943FB17B3B6A95 /* Pods-Frameworks-DGPaginableBehavior-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8030BBBBB6170482C090FFD37E05EBCA /* Pods-Frameworks-DGPaginableBehavior-iOS-dummy.m */; };
-		779D64CB216227F8525CDCC2F80B657C /* Pods-Samples-DGPaginableBehaviorSample-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99137811750712FE5C28B1A2998F720D /* Pods-Samples-DGPaginableBehaviorSample-iOS-dummy.m */; };
-		8D3752336DF189824E2924B4A702AC5C /* Pods-Samples-DGPaginableBehaviorSample-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D234134F6AFDE88D91856986ACB6984 /* Pods-Samples-DGPaginableBehaviorSample-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C923126E8D466E624F0195D1D1CCC76 /* DGCollectionViewGridLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE222660CE4A9C0C80AA50567F0137BA /* DGCollectionViewGridLayout-dummy.m */; };
+		8864B9F1A3F938F1AFA01FEF8502FF91 /* DGCollectionViewGridLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E7245E4A1B1FD7D994DA15B694F0C6 /* DGCollectionViewGridLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9921BB542C7C9B2158852E6758D7E771 /* Pods-Samples-DGPaginableBehaviorSample-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D234134F6AFDE88D91856986ACB6984 /* Pods-Samples-DGPaginableBehaviorSample-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4DCE4F1C2F0B193D9163F5643539AD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		AC28B118933E2400806BAED4C747AB01 /* Pods-Frameworks-DGPaginableBehavior-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BED10A67879916E200B74EAB99132E33 /* Pods-Frameworks-DGPaginableBehavior-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDDDCEBF2658A40FB49400193DFF93D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		F3A6B84F47C70AD160843083DF2ACCAA /* Pods-Tests-DGPaginableBehaviorTests-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6A94EB3BE7FA1636F59680BFB24D6B7 /* Pods-Tests-DGPaginableBehaviorTests-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE6324FC8925C2D1AB19CC1EFC9E0417 /* DGCollectionViewGridLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD55DECBD9D6C900A2987F8D89249DD1 /* DGCollectionViewGridLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBAF70EB1733E61C0CA2D4829A95AC6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 518CEDFF99B5A76E1FD17163A29F334C;
+			remoteInfo = DGCollectionViewGridLayout;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02E348DC5C1A2BD43FFADDD69E3D35FF /* Pods-Tests-DGPaginableBehaviorTests-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-DGPaginableBehaviorTests-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -29,41 +44,42 @@
 		1E023731186D29C22848B890A9AFDAAF /* Pods-Frameworks-DGPaginableBehavior-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Frameworks-DGPaginableBehavior-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3C3384CBD4E1553F4555ABE26556F790 /* Pods-Samples-DGPaginableBehaviorSample-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Samples-DGPaginableBehaviorSample-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3EAE1A749F91C9273126C687F02ED4AC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4060743987CD38243A5B822725554C20 /* Pods_Frameworks_DGPaginableBehavior_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Frameworks_DGPaginableBehavior_iOS.framework; path = "Pods-Frameworks-DGPaginableBehavior-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		575C55D9EEB78B84FF4EEDFEC5E4D71C /* Pods-Tests-DGPaginableBehaviorTests-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-DGPaginableBehaviorTests-iOS-dummy.m"; sourceTree = "<group>"; };
 		5D234134F6AFDE88D91856986ACB6984 /* Pods-Samples-DGPaginableBehaviorSample-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Samples-DGPaginableBehaviorSample-iOS-umbrella.h"; sourceTree = "<group>"; };
-		61381BF27B1FD8C12617510A36E1452E /* Pods_Tests_DGPaginableBehaviorTests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tests_DGPaginableBehaviorTests_iOS.framework; path = "Pods-Tests-DGPaginableBehaviorTests-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		627BB38512595CB2766624235F871B99 /* Pods-Samples-DGPaginableBehaviorSample-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Samples-DGPaginableBehaviorSample-iOS-resources.sh"; sourceTree = "<group>"; };
-		777524FB46908D32C04F8464FC25946E /* Pods_Frameworks_DGPaginableBehavior_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Frameworks_DGPaginableBehavior_iOS.framework; path = "Pods-Frameworks-DGPaginableBehavior-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EEF717DFAB6CD95F9DE1AC5427BAD68 /* Pods-Frameworks-DGPaginableBehavior-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Frameworks-DGPaginableBehavior-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		8030BBBBB6170482C090FFD37E05EBCA /* Pods-Frameworks-DGPaginableBehavior-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Frameworks-DGPaginableBehavior-iOS-dummy.m"; sourceTree = "<group>"; };
 		81C517968D93B50EA9EE2ABF087FAD75 /* Pods-Samples-DGPaginableBehaviorSample-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Samples-DGPaginableBehaviorSample-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		83D1E84CBCE768087BB88B83955F1FC8 /* Pods-Frameworks-DGPaginableBehavior-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Frameworks-DGPaginableBehavior-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		8747A42C37FB4A4B52A794A8676C43C4 /* Pods-Tests-DGPaginableBehaviorTests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests-DGPaginableBehaviorTests-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94E25238DE3C0D5E374E5FF8BA805C29 /* DGCollectionViewGridLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DGCollectionViewGridLayout.xcconfig; sourceTree = "<group>"; };
 		97580E2BAF170D04E8EBB2332855C694 /* Pods-Tests-DGPaginableBehaviorTests-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-DGPaginableBehaviorTests-iOS-resources.sh"; sourceTree = "<group>"; };
 		99137811750712FE5C28B1A2998F720D /* Pods-Samples-DGPaginableBehaviorSample-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Samples-DGPaginableBehaviorSample-iOS-dummy.m"; sourceTree = "<group>"; };
+		9D557855DE031054F3747F8B9F41FB77 /* DGCollectionViewGridLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DGCollectionViewGridLayout-prefix.pch"; sourceTree = "<group>"; };
 		A2072CF8D74F3671C76E5A5AE97CD069 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3036EBA934F55044F6E26B24B13F2A2 /* Pods_Tests_DGPaginableBehaviorTests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tests_DGPaginableBehaviorTests_iOS.framework; path = "Pods-Tests-DGPaginableBehaviorTests-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51ECA3167DB20354F6FB0AE417211E1 /* DGCollectionViewGridLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DGCollectionViewGridLayout.framework; path = DGCollectionViewGridLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7D39466F9FA117A9D51ECBB1C8A307E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB4D484C92D628FC86E331607E781FA5 /* Pods-Tests-DGPaginableBehaviorTests-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Tests-DGPaginableBehaviorTests-iOS.modulemap"; sourceTree = "<group>"; };
 		B69A8AABEA5D4341E5CCC52DE514517D /* Pods-Tests-DGPaginableBehaviorTests-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-DGPaginableBehaviorTests-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		BED10A67879916E200B74EAB99132E33 /* Pods-Frameworks-DGPaginableBehavior-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Frameworks-DGPaginableBehavior-iOS-umbrella.h"; sourceTree = "<group>"; };
 		C05B53CD97911140307CC9C4E01B5CE6 /* Pods-Samples-DGPaginableBehaviorSample-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Samples-DGPaginableBehaviorSample-iOS-frameworks.sh"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D2E7245E4A1B1FD7D994DA15B694F0C6 /* DGCollectionViewGridLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGCollectionViewGridLayout.h; path = Sources/DGCollectionViewGridLayout.h; sourceTree = "<group>"; };
 		D44564552FEC2B0442B24E75ED9CB565 /* Pods-Tests-DGPaginableBehaviorTests-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-DGPaginableBehaviorTests-iOS-frameworks.sh"; sourceTree = "<group>"; };
 		D99F4CBA3D4C0F466E18DF9AD9A7D1B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E23F60472FAACBEF878DA2E746306467 /* Pods_Samples_DGPaginableBehaviorSample_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Samples_DGPaginableBehaviorSample_iOS.framework; path = "Pods-Samples-DGPaginableBehaviorSample-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD55DECBD9D6C900A2987F8D89249DD1 /* DGCollectionViewGridLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DGCollectionViewGridLayout-umbrella.h"; sourceTree = "<group>"; };
+		E76A3D05A7A979B4422671C6361FB8C4 /* Pods_Samples_DGPaginableBehaviorSample_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Samples_DGPaginableBehaviorSample_iOS.framework; path = "Pods-Samples-DGPaginableBehaviorSample-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E949232137498F6BBB5C82D547CE5195 /* Pods-Samples-DGPaginableBehaviorSample-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Samples-DGPaginableBehaviorSample-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		EE222660CE4A9C0C80AA50567F0137BA /* DGCollectionViewGridLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DGCollectionViewGridLayout-dummy.m"; sourceTree = "<group>"; };
+		F33A11951A19C2AFE82C4A705D60A1E3 /* DGGridCollectionFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DGGridCollectionFlowLayout.swift; path = Sources/DGGridCollectionFlowLayout.swift; sourceTree = "<group>"; };
 		F6A94EB3BE7FA1636F59680BFB24D6B7 /* Pods-Tests-DGPaginableBehaviorTests-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-DGPaginableBehaviorTests-iOS-umbrella.h"; sourceTree = "<group>"; };
+		FAF9FDC67AB8FFFDBF646E562DA168AD /* DGCollectionViewGridLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DGCollectionViewGridLayout.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1988287A5053DF574FE01AC76B1F4806 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				26F23F81B3F9E2EC072FDC359E569E69 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4FD2A0D84049334C796C80E8ECA660EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,11 +88,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		530E11DCD3B9F3ACB798991722430154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212156FEC1EF3FD895C0FB0C4F8D77AE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6F081F68BCA5B3F911AB6D3B433C2907 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				23D5B8CCE460B98F60F9524846A3A835 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88B12D2D6DF177A20F57476BE92D91E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDDDCEBF2658A40FB49400193DFF93D0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,9 +146,18 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				BD5A3CD978F0353F36B1E85C04ABF638 /* Products */,
+				8323F6B69B84FDACE26E790701CCF831 /* Pods */,
+				D469F6E8A6DEF0C5F2138DB874A20A28 /* Products */,
 				C180B01AB4441E2A202FD34877EEE578 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8323F6B69B84FDACE26E790701CCF831 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB8A2920D9A5418F6CF1B3CD8B5241D3 /* DGCollectionViewGridLayout */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		9B0D7F4CA4F84229EBB2E0E59C4E3FDD /* Pods-Samples-DGPaginableBehaviorSample-iOS */ = {
@@ -145,16 +186,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BD5A3CD978F0353F36B1E85C04ABF638 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				777524FB46908D32C04F8464FC25946E /* Pods_Frameworks_DGPaginableBehavior_iOS.framework */,
-				E23F60472FAACBEF878DA2E746306467 /* Pods_Samples_DGPaginableBehaviorSample_iOS.framework */,
-				61381BF27B1FD8C12617510A36E1452E /* Pods_Tests_DGPaginableBehaviorTests_iOS.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		C180B01AB4441E2A202FD34877EEE578 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +194,42 @@
 				33C0AC1708BA69E2AE9F8223E77CE6F1 /* Pods-Tests-DGPaginableBehaviorTests-iOS */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CB8A2920D9A5418F6CF1B3CD8B5241D3 /* DGCollectionViewGridLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D2E7245E4A1B1FD7D994DA15B694F0C6 /* DGCollectionViewGridLayout.h */,
+				F33A11951A19C2AFE82C4A705D60A1E3 /* DGGridCollectionFlowLayout.swift */,
+				E8B7ADA12610F10E1AFAE30F7F8B884A /* Support Files */,
+			);
+			name = DGCollectionViewGridLayout;
+			path = DGCollectionViewGridLayout;
+			sourceTree = "<group>";
+		};
+		D469F6E8A6DEF0C5F2138DB874A20A28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A51ECA3167DB20354F6FB0AE417211E1 /* DGCollectionViewGridLayout.framework */,
+				4060743987CD38243A5B822725554C20 /* Pods_Frameworks_DGPaginableBehavior_iOS.framework */,
+				E76A3D05A7A979B4422671C6361FB8C4 /* Pods_Samples_DGPaginableBehaviorSample_iOS.framework */,
+				A3036EBA934F55044F6E26B24B13F2A2 /* Pods_Tests_DGPaginableBehaviorTests_iOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8B7ADA12610F10E1AFAE30F7F8B884A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAF9FDC67AB8FFFDBF646E562DA168AD /* DGCollectionViewGridLayout.modulemap */,
+				94E25238DE3C0D5E374E5FF8BA805C29 /* DGCollectionViewGridLayout.xcconfig */,
+				EE222660CE4A9C0C80AA50567F0137BA /* DGCollectionViewGridLayout-dummy.m */,
+				9D557855DE031054F3747F8B9F41FB77 /* DGCollectionViewGridLayout-prefix.pch */,
+				DD55DECBD9D6C900A2987F8D89249DD1 /* DGCollectionViewGridLayout-umbrella.h */,
+				A7D39466F9FA117A9D51ECBB1C8A307E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DGCollectionViewGridLayout";
 			sourceTree = "<group>";
 		};
 		F9E4E66703D56159528847C2CBC52D7C /* Pods-Frameworks-DGPaginableBehavior-iOS */ = {
@@ -193,19 +260,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		19F2309E17A4734943F5CF787EB3D8B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9921BB542C7C9B2158852E6758D7E771 /* Pods-Samples-DGPaginableBehaviorSample-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39EA38075B8620C6F01D77F04B009030 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE6324FC8925C2D1AB19CC1EFC9E0417 /* DGCollectionViewGridLayout-umbrella.h in Headers */,
+				8864B9F1A3F938F1AFA01FEF8502FF91 /* DGCollectionViewGridLayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4675212247350BD13B9FF7018406C674 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F3A6B84F47C70AD160843083DF2ACCAA /* Pods-Tests-DGPaginableBehaviorTests-iOS-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A733E65252CE0D1753C6B527EAA8A74C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8D3752336DF189824E2924B4A702AC5C /* Pods-Samples-DGPaginableBehaviorSample-iOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,24 +302,42 @@
 			);
 			name = "Pods-Tests-DGPaginableBehaviorTests-iOS";
 			productName = "Pods-Tests-DGPaginableBehaviorTests-iOS";
-			productReference = 61381BF27B1FD8C12617510A36E1452E /* Pods_Tests_DGPaginableBehaviorTests_iOS.framework */;
+			productReference = A3036EBA934F55044F6E26B24B13F2A2 /* Pods_Tests_DGPaginableBehaviorTests_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		503E71968D06866E39FCD18AB4451DB1 /* Pods-Samples-DGPaginableBehaviorSample-iOS */ = {
+		2BE05943581721DBBCF08C8FFBF1934A /* Pods-Samples-DGPaginableBehaviorSample-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C1D14710264306604F2A377CC18E1C04 /* Build configuration list for PBXNativeTarget "Pods-Samples-DGPaginableBehaviorSample-iOS" */;
+			buildConfigurationList = EEAC244A83F54E7F2D0391388A50F85E /* Build configuration list for PBXNativeTarget "Pods-Samples-DGPaginableBehaviorSample-iOS" */;
 			buildPhases = (
-				0FBE8C480C2CAC35513B1ADE1E89BC89 /* Sources */,
-				1988287A5053DF574FE01AC76B1F4806 /* Frameworks */,
-				A733E65252CE0D1753C6B527EAA8A74C /* Headers */,
+				8F8E8D10334F22EE352C70FAD7D109E4 /* Sources */,
+				88B12D2D6DF177A20F57476BE92D91E9 /* Frameworks */,
+				19F2309E17A4734943F5CF787EB3D8B3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A265FB570356AD29F5F12963FACBF63A /* PBXTargetDependency */,
+			);
+			name = "Pods-Samples-DGPaginableBehaviorSample-iOS";
+			productName = "Pods-Samples-DGPaginableBehaviorSample-iOS";
+			productReference = E76A3D05A7A979B4422671C6361FB8C4 /* Pods_Samples_DGPaginableBehaviorSample_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		518CEDFF99B5A76E1FD17163A29F334C /* DGCollectionViewGridLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C03D26C8FA0B33FE8D4C74933396BEED /* Build configuration list for PBXNativeTarget "DGCollectionViewGridLayout" */;
+			buildPhases = (
+				378DA3195F01B9E78B616C5C07A6676E /* Sources */,
+				530E11DCD3B9F3ACB798991722430154 /* Frameworks */,
+				39EA38075B8620C6F01D77F04B009030 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Samples-DGPaginableBehaviorSample-iOS";
-			productName = "Pods-Samples-DGPaginableBehaviorSample-iOS";
-			productReference = E23F60472FAACBEF878DA2E746306467 /* Pods_Samples_DGPaginableBehaviorSample_iOS.framework */;
+			name = DGCollectionViewGridLayout;
+			productName = DGCollectionViewGridLayout;
+			productReference = A51ECA3167DB20354F6FB0AE417211E1 /* DGCollectionViewGridLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FBA6F0F4D2C3CD9FA76B4127A391EE1B /* Pods-Frameworks-DGPaginableBehavior-iOS */ = {
@@ -260,7 +354,7 @@
 			);
 			name = "Pods-Frameworks-DGPaginableBehavior-iOS";
 			productName = "Pods-Frameworks-DGPaginableBehavior-iOS";
-			productReference = 777524FB46908D32C04F8464FC25946E /* Pods_Frameworks_DGPaginableBehavior_iOS.framework */;
+			productReference = 4060743987CD38243A5B822725554C20 /* Pods_Frameworks_DGPaginableBehavior_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -280,23 +374,25 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = BD5A3CD978F0353F36B1E85C04ABF638 /* Products */;
+			productRefGroup = D469F6E8A6DEF0C5F2138DB874A20A28 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				518CEDFF99B5A76E1FD17163A29F334C /* DGCollectionViewGridLayout */,
 				FBA6F0F4D2C3CD9FA76B4127A391EE1B /* Pods-Frameworks-DGPaginableBehavior-iOS */,
-				503E71968D06866E39FCD18AB4451DB1 /* Pods-Samples-DGPaginableBehaviorSample-iOS */,
+				2BE05943581721DBBCF08C8FFBF1934A /* Pods-Samples-DGPaginableBehaviorSample-iOS */,
 				20D61E25B07EAF72FC6CF44E61627876 /* Pods-Tests-DGPaginableBehaviorTests-iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0FBE8C480C2CAC35513B1ADE1E89BC89 /* Sources */ = {
+		378DA3195F01B9E78B616C5C07A6676E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				779D64CB216227F8525CDCC2F80B657C /* Pods-Samples-DGPaginableBehaviorSample-iOS-dummy.m in Sources */,
+				5C923126E8D466E624F0195D1D1CCC76 /* DGCollectionViewGridLayout-dummy.m in Sources */,
+				0D60C8EE118AA8DD1E50D7CF8E2DFFA7 /* DGGridCollectionFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +401,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0146B88B4C766E29D5190FB54D2E7D7E /* Pods-Tests-DGPaginableBehaviorTests-iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F8E8D10334F22EE352C70FAD7D109E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28F81F6B5C840E12E892AF36B38256FC /* Pods-Samples-DGPaginableBehaviorSample-iOS-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +421,15 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A265FB570356AD29F5F12963FACBF63A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DGCollectionViewGridLayout;
+			target = 518CEDFF99B5A76E1FD17163A29F334C /* DGCollectionViewGridLayout */;
+			targetProxy = CBAF70EB1733E61C0CA2D4829A95AC6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
@@ -362,6 +475,38 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
+		};
+		391C17A24DCD16DD097B3170AEE4D78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E25238DE3C0D5E374E5FF8BA805C29 /* DGCollectionViewGridLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DGCollectionViewGridLayout/DGCollectionViewGridLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DGCollectionViewGridLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DGCollectionViewGridLayout/DGCollectionViewGridLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DGCollectionViewGridLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		3A43C0CD590A3E330D69F108B1A55B3C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -438,40 +583,38 @@
 			};
 			name = Release;
 		};
-		62E916D2924EA8FBA3E40EE49DE6AB64 /* Release */ = {
+		5DCE559014700F6FB4B81FD8E89DE490 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E949232137498F6BBB5C82D547CE5195 /* Pods-Samples-DGPaginableBehaviorSample-iOS.release.xcconfig */;
+			baseConfigurationReference = 94E25238DE3C0D5E374E5FF8BA805C29 /* DGCollectionViewGridLayout.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Samples-DGPaginableBehaviorSample-iOS/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/DGCollectionViewGridLayout/DGCollectionViewGridLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DGCollectionViewGridLayout/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Samples-DGPaginableBehaviorSample-iOS/Pods-Samples-DGPaginableBehaviorSample-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Samples_DGPaginableBehaviorSample_iOS;
+				MODULEMAP_FILE = "Target Support Files/DGCollectionViewGridLayout/DGCollectionViewGridLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DGCollectionViewGridLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		6C6B0934DF2D4FE6C5C3B0C66C56BF4E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -508,41 +651,6 @@
 			};
 			name = Release;
 		};
-		701F7256E3DCD34CAC8E0330E5FC9CB0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81C517968D93B50EA9EE2ABF087FAD75 /* Pods-Samples-DGPaginableBehaviorSample-iOS.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Samples-DGPaginableBehaviorSample-iOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Samples-DGPaginableBehaviorSample-iOS/Pods-Samples-DGPaginableBehaviorSample-iOS.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Samples_DGPaginableBehaviorSample_iOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		7A6CB22D25B169D3B83EB9E76BDBF0D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7EEF717DFAB6CD95F9DE1AC5427BAD68 /* Pods-Frameworks-DGPaginableBehavior-iOS.release.xcconfig */;
@@ -570,6 +678,41 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_Frameworks_DGPaginableBehavior_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7CA91E7BB679B6F7415523BBECF0F393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E949232137498F6BBB5C82D547CE5195 /* Pods-Samples-DGPaginableBehaviorSample-iOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Samples-DGPaginableBehaviorSample-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Samples-DGPaginableBehaviorSample-iOS/Pods-Samples-DGPaginableBehaviorSample-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Samples_DGPaginableBehaviorSample_iOS;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -613,6 +756,42 @@
 			};
 			name = Debug;
 		};
+		B5FB049DD4A633092C03D68EADAFE99C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C517968D93B50EA9EE2ABF087FAD75 /* Pods-Samples-DGPaginableBehaviorSample-iOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Samples-DGPaginableBehaviorSample-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Samples-DGPaginableBehaviorSample-iOS/Pods-Samples-DGPaginableBehaviorSample-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Samples_DGPaginableBehaviorSample_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -643,11 +822,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C1D14710264306604F2A377CC18E1C04 /* Build configuration list for PBXNativeTarget "Pods-Samples-DGPaginableBehaviorSample-iOS" */ = {
+		C03D26C8FA0B33FE8D4C74933396BEED /* Build configuration list for PBXNativeTarget "DGCollectionViewGridLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				701F7256E3DCD34CAC8E0330E5FC9CB0 /* Debug */,
-				62E916D2924EA8FBA3E40EE49DE6AB64 /* Release */,
+				5DCE559014700F6FB4B81FD8E89DE490 /* Debug */,
+				391C17A24DCD16DD097B3170AEE4D78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEAC244A83F54E7F2D0391388A50F85E /* Build configuration list for PBXNativeTarget "Pods-Samples-DGPaginableBehaviorSample-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FB049DD4A633092C03D68EADAFE99C /* Debug */,
+				7CA91E7BB679B6F7415523BBECF0F393 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

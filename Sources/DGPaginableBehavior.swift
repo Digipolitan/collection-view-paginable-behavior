@@ -21,9 +21,7 @@ public enum DGPaginableBehaviorOptions: String {
 }
 
 open class DGPaginableBehavior: NSObject {
-
-
-	fileprivate(set) var sectionInfo: [Int: (fetching: Bool, done: Bool)]
+	fileprivate(set) public var sectionInfo: [Int: (fetching: Bool, done: Bool)]
 	fileprivate(set) var options: [DGPaginableBehaviorOptions: Any]
 	fileprivate var lastIndexes: [Int: Int]
 
@@ -60,7 +58,7 @@ open class DGPaginableBehavior: NSObject {
 		return self.sectionInfo[section]?.done ?? false
 	}
 
-	public func setOptions(options: [DGPaginableBehaviorOptions: Any]) {
+	public func set(options: [DGPaginableBehaviorOptions: Any]) {
 		self.options = options
 	}
 
