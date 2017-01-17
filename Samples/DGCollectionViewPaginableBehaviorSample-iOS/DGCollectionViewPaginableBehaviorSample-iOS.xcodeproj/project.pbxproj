@@ -19,7 +19,7 @@
 		A3D8B9AA1E2E648900D6B661 /* MultipleSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8B9A91E2E648900D6B661 /* MultipleSectionsViewController.swift */; };
 		A3D8B9AC1E2E649200D6B661 /* ManualModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8B9AB1E2E649200D6B661 /* ManualModeViewController.swift */; };
 		A3D8B9AE1E2E649F00D6B661 /* LoadingErrorManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8B9AD1E2E649F00D6B661 /* LoadingErrorManualViewController.swift */; };
-		A3D8B9B01E2E64A700D6B661 /* LoadErrorAutomaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8B9AF1E2E64A700D6B661 /* LoadErrorAutomaticViewController.swift */; };
+		A3D8B9B01E2E64A700D6B661 /* LoadingErrorAutomaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8B9AF1E2E64A700D6B661 /* LoadingErrorAutomaticViewController.swift */; };
 		A3D8B9B21E2E64C400D6B661 /* CustomLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8B9B11E2E64C400D6B661 /* CustomLayoutViewController.swift */; };
 		A3D8B9B41E2E64CF00D6B661 /* ClassicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8B9B31E2E64CF00D6B661 /* ClassicViewController.swift */; };
 		A3D8B9BD1E2E64E000D6B661 /* LoadingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8B9B51E2E64E000D6B661 /* LoadingFooterView.swift */; };
@@ -66,7 +66,7 @@
 		A3D8B9A91E2E648900D6B661 /* MultipleSectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleSectionsViewController.swift; sourceTree = "<group>"; };
 		A3D8B9AB1E2E649200D6B661 /* ManualModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualModeViewController.swift; sourceTree = "<group>"; };
 		A3D8B9AD1E2E649F00D6B661 /* LoadingErrorManualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingErrorManualViewController.swift; sourceTree = "<group>"; };
-		A3D8B9AF1E2E64A700D6B661 /* LoadErrorAutomaticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadErrorAutomaticViewController.swift; sourceTree = "<group>"; };
+		A3D8B9AF1E2E64A700D6B661 /* LoadingErrorAutomaticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingErrorAutomaticViewController.swift; sourceTree = "<group>"; };
 		A3D8B9B11E2E64C400D6B661 /* CustomLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLayoutViewController.swift; sourceTree = "<group>"; };
 		A3D8B9B31E2E64CF00D6B661 /* ClassicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassicViewController.swift; sourceTree = "<group>"; };
 		A3D8B9B51E2E64E000D6B661 /* LoadingFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingFooterView.swift; sourceTree = "<group>"; };
@@ -225,7 +225,7 @@
 		A3D8B9A31E2E646400D6B661 /* Automatic */ = {
 			isa = PBXGroup;
 			children = (
-				A3D8B9AF1E2E64A700D6B661 /* LoadErrorAutomaticViewController.swift */,
+				A3D8B9AF1E2E64A700D6B661 /* LoadingErrorAutomaticViewController.swift */,
 			);
 			name = Automatic;
 			sourceTree = "<group>";
@@ -380,7 +380,7 @@
 			files = (
 				A3D8B9B21E2E64C400D6B661 /* CustomLayoutViewController.swift in Sources */,
 				A3D8B9AA1E2E648900D6B661 /* MultipleSectionsViewController.swift in Sources */,
-				A3D8B9B01E2E64A700D6B661 /* LoadErrorAutomaticViewController.swift in Sources */,
+				A3D8B9B01E2E64A700D6B661 /* LoadingErrorAutomaticViewController.swift in Sources */,
 				A3D8B9BF1E2E64E000D6B661 /* LoadingItemCell.swift in Sources */,
 				A3D8B9AC1E2E649200D6B661 /* ManualModeViewController.swift in Sources */,
 				A3D8B9C11E2E64E000D6B661 /* ReusableView.swift in Sources */,

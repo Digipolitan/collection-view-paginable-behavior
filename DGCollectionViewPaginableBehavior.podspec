@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 s.name = "DGCollectionViewPaginableBehavior"
 s.version = "1.0.0"
-s.summary = "This is a summary."
+s.summary = "Allows you to paginate your collection of data with only few lines of code"
 s.homepage = "https://github.com/Digipolitan/collection-view-paginable-behavior"
 s.authors = "Digipolitan"
 s.source = { :git => "https://github.com/Digipolitan/collection-view-paginable-behavior.git", :tag => "v#{s.version}" }

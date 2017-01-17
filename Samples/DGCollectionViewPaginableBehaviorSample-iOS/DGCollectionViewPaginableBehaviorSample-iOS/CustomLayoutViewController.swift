@@ -117,7 +117,7 @@ extension CustomLayoutViewController: LoadingFooterViewDelegate {
 
 /**
 Since the Paginable behavior is a partial implementation of UICollecitonViewDelegate,
-It's the direct instance interavting with the collection View.
+It's the direct instance interacting with the collection View.
 If your custom layout needs a delegate with specific methods, just extend the behavior of the Paginable component.
 **/
 extension DGCollectionViewPaginableBehavior: DGGridLayoutDelegate {
