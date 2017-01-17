@@ -34,13 +34,11 @@ end
 
 ## Usage
 
-Initialize your behavior 
+Initialize your behavior
 
 ```swift
 	let behavior = DGCollectionViewPaginableBehavior()
 ```
-
-
 
 ### Configuration
 
@@ -62,7 +60,7 @@ self.collectionView.delegate = behavior
 ```
 
 Since the `DGCollectionViewPaginableBehavior` inherits from `UICollectionViewDelegateFlowLayout` you can implement the methods of `UICollectionViewDelegate` to respond to interactions with the `collectionView`.
- Implements `UICollectionViewDelegateFlowLayout` for sizing information and finally 
+ Implements `UICollectionViewDelegateFlowLayout` for sizing information and finally
 the `DGCollectionViewPaginableBehavior`, as you imagine, to adopt a paginable behavior.
 
 - DGCollectionViewPaginableBehaviorDelegate
@@ -79,7 +77,8 @@ the `DGCollectionViewPaginableBehavior`, as you imagine, to adopt a paginable be
 ```
 
 ## Work with custom layout
-You might want to use custom layout. If so, extend the behavior of the Paginable component. Here an example with our custom layout [DGCollectionViewGridLayout](https://github.com/Digipolitan/collection-view-grid-layout-ios) 
+
+You might want to use custom layout. If so, extend the behavior of the Paginable component. Here an example with our custom layout [DGCollectionViewGridLayout](https://github.com/Digipolitan/collection-view-grid-layout-ios)
 
 ```swift
 /**
@@ -87,24 +86,20 @@ Since the Paginable behavior is a partial implementation of UICollecitonViewDele
 It's the direct instance interacting with the collection View.
 If your custom layout needs a delegate with specific methods, just extend the behavior of the Paginable component.
 **/
-extension DGCollectionViewPaginableBehavior: DGGridLayoutDelegate {
-	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: DGCollectionViewGridLayout, heightForItemAtIndexPath indexPath: IndexPath, columnWidth: CGFloat) -> CGFloat {
+extension DGCollectionViewPaginableBehavior: DGCollectionGridLayoutDelegate {
+	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: DGCollectionViewGridLayout, heightForItemAt indexPath: IndexPath, columnWidth: CGFloat) -> CGFloat {
 		return 90
 	}
 
-	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: DGCollectionViewGridLayout, heightForHeaderInSection section: Int) -> CGFloat {
+	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: DGCollectionViewGridLayout, heightForHeaderIn section: Int) -> CGFloat {
 		return 42
 	}
 
-	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: DGCollectionViewGridLayout, heightForFooterInSection section: Int) -> CGFloat {
+	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: DGCollectionViewGridLayout, heightForFooterIn section: Int) -> CGFloat {
 		return 90
 	}
 }
-
 ```
-
-
-
 
 ## Built With
 
@@ -122,4 +117,3 @@ unacceptable behavior to [contact@digipolitan.com](mailto:contact@digipolitan.co
 ## License
 
 DGCollectionViewPaginableBehavior is licensed under the [BSD 3-Clause license](LICENSE).
-
