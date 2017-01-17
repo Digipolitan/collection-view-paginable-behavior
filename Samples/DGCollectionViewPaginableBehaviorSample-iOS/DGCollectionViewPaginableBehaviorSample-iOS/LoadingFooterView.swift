@@ -38,8 +38,7 @@ class LoadingFooterView: UICollectionReusableView {
 		if sectionStatus.fetching {
 			self.loaderActivity.startAnimating()
 			return;
-		}
-		else {
+		} else {
 			self.loaderActivity.stopAnimating()
 		}
 

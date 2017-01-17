@@ -56,12 +56,16 @@ extension MultipleSectionsViewController: UICollectionViewDataSource {
 
 	func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
 		if kind == UICollectionElementKindSectionHeader {
-			let header: ReusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ReusableView.Identifier, for: indexPath) as! ReusableView
+            guard let header: ReusableView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ReusableView.Identifier, for: indexPath) as? ReusableView else {
+                fatalError()
+            }
 			header.textLabel.text = "Header for section \(indexPath.section)"
 			return header
 		}
 
-		let footer: LoadingFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: LoadingFooterView.Identifier, for: indexPath) as! LoadingFooterView
+        guard let footer: LoadingFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: LoadingFooterView.Identifier, for: indexPath) as? LoadingFooterView else {
+            fatalError()
+        }
 		footer.set(sectionStatus: self.behavior.sectionStatus(forSection: indexPath.section))
 		footer.set(indexPath: indexPath)
 		footer.delegate = self

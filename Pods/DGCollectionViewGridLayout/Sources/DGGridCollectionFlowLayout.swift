@@ -212,8 +212,7 @@ open class DGCollectionViewGridLayout: UICollectionViewLayout {
 			if let info = self.supplementaryViewsInfoInSection[section] {
 				info.header?.size = headerSize ?? CGSize()
 				info.footer?.size = footerSize ?? CGSize()
-			}
-			else {
+			} else {
 				let headerAttributes = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
 				                                                       with: IndexPath(item: 0, section: section))
 				headerAttributes.frame = CGRect(x: 0, y: 0, width: (headerSize?.width ?? 0), height: (headerSize?.height ?? 0))
@@ -244,7 +243,6 @@ open class DGCollectionViewGridLayout: UICollectionViewLayout {
 				let start = max(0, line - 1) * self.numberOfColumns
 				let end = (line + 1) * self.numberOfColumns
 				for item in start...(end - 1) {
-//					print("item: \(item), line: \(line), section: \(section)")
 					let indexPath = IndexPath(item: ((line * self.numberOfColumns) + item), section: section)
 
 					let itemHeight = self.delegate?
@@ -255,8 +253,7 @@ open class DGCollectionViewGridLayout: UICollectionViewLayout {
 				if var linesHeight = self.heightOfLinesInSection[section] {
 					linesHeight[line] = lineHeight
 					self.heightOfLinesInSection[section] = linesHeight
-				}
-				else {
+				} else {
 					self.heightOfLinesInSection[section] = [line: lineHeight]
 				}
 			}

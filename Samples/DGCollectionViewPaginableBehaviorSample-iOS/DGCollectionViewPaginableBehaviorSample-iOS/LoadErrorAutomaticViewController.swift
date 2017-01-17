@@ -38,7 +38,9 @@ extension LoadingErrorAutomaticViewController: UICollectionViewDataSource {
 	}
 
 	func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-		let footer: LoadingFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: LoadingFooterView.Identifier, for: indexPath) as! LoadingFooterView
+        guard let footer: LoadingFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: LoadingFooterView.Identifier, for: indexPath) as? LoadingFooterView else {
+            fatalError()
+        }
 		let sectionStatus = self.behavior.sectionStatus(forSection: indexPath.section)
 		footer.set(sectionStatus: sectionStatus)
 		footer.set(indexPath: indexPath)
