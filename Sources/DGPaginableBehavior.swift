@@ -117,9 +117,9 @@ extension DGPaginableBehavior: UICollectionViewDelegateFlowLayout {
 		var index = self.lastIndexes[indexPath.section] = indexPath.row + 1
 
 		let automatic: Bool = self.options[.automaticFetch] as! Bool
-		let info = self.sectionInfo[indexPath.section]!
+		let statuses = self.statusesForSection(indexPath.section)
 
-		if (automatic && info.error == nil) {
+		if (automatic && statuses.error == nil) {
 			self.fetchNext(indexPath.section) {
 				collectionView.reloadSections([indexPath.section])
 			}
