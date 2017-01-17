@@ -10,7 +10,13 @@ import UIKit
 
 @objc
 public protocol DGCollectionViewPaginableBehaviorDelegate: UICollectionViewDelegateFlowLayout {
+	/**
+	* Gives the number of items to fetch for a given section.
+	*/
 	@objc optional func paginableBehavior(_ paginableBehavior: DGCollectionViewPaginableBehavior, countPerPageInSection section: Int) -> Int
+	/**
+	* Core methods that will be called every time the user reach the end of the collection. Depending on the mode set for automatic fetch.
+	*/
 	@objc optional func paginableBehavior(_ paginableBehavior: DGCollectionViewPaginableBehavior, fetchDataFrom indexPath: IndexPath, count: Int, completion: @escaping (Error?, Int) -> Void)
 }
 
@@ -112,7 +118,7 @@ open class DGCollectionViewPaginableBehavior: NSObject {
 extension DGCollectionViewPaginableBehavior: UICollectionViewDelegateFlowLayout {
 	public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
 		self.delegate?.collectionView?(collectionView, willDisplay: cell, forItemAt: indexPath)
-
+		(collectionView.collectionViewLayout as UICollectionViewFlowLayout).section
 		// If the element that will be displayed is not the last,
 		// means we did not reach the end of the collection.
 		guard let dataSource = collectionView.dataSource,
