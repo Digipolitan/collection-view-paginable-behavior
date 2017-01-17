@@ -33,14 +33,8 @@ class CustomLayoutViewController: OriginalViewController {
 		self.behavior.delegate = self
 	}
 
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-	}
-
 	func configureBehavior() {
-		self.behavior.set(options: [
-			.automaticFetch: false
-			])
+        self.behavior.options = DGPaginableBehavior.Options(automaticFetch: false)
 	}
 
 	func configureCollectionViewLayout() {
@@ -84,7 +78,7 @@ extension CustomLayoutViewController: DGGridLayoutDataSource {
 		}
 
 		let footer: LoadingFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: LoadingFooterView.Identifier, for: indexPath) as! LoadingFooterView
-		footer.set(statuses: self.behavior.statusesForSection(indexPath.section))
+		footer.set(sectionStatus: self.behavior.sectionStatus(forSection: indexPath.section))
 		footer.set(indexPath: indexPath)
 		footer.delegate = self
 		return footer
@@ -98,7 +92,7 @@ extension CustomLayoutViewController: DGPaginableBehaviorDelegate {
 		return 3
 	}
 
-	func paginableBehavior(_ paginableBehavior: DGPaginableBehavior, fetchDataFrom indexPath: IndexPath, with count: Int, completion: @escaping (Error?, Int) -> Void) {
+	func paginableBehavior(_ paginableBehavior: DGPaginableBehavior, fetchDataFrom indexPath: IndexPath, count: Int, completion: @escaping (Error?, Int) -> Void) {
 		// Simulating 3 seconds delay
 		DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
 			let results = User.stub(from: indexPath.row, with: count)
@@ -115,14 +109,14 @@ extension CustomLayoutViewController: DGPaginableBehaviorDelegate {
 
 extension CustomLayoutViewController: LoadingFooterViewDelegate {
 	func footer(_ footer: LoadingFooterView, loadMoreFromIndexPath indexPath: IndexPath) {
-		self.behavior.fetchNext(indexPath.section) { (_) in
+		self.behavior.fetchNextData(forSection: indexPath.section) {
 			self.collectionView.reloadSections([indexPath.section])
 		}
 	}
 }
 
 /**
-Since the PAginable behavior is a partial implementation of UICollecitonViewDelegate,
+Since the Paginable behavior is a partial implementation of UICollecitonViewDelegate,
 It's the direct instance interavting with the collection View.
 If your custom layout needs a delegate with specific methods, just extend the behavior of the Paginable component.
 **/

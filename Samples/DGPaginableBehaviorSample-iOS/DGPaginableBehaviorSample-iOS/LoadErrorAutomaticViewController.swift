@@ -20,13 +20,9 @@ class LoadingErrorAutomaticViewController: OriginalViewController {
 		self.collectionView.delegate	= self.behavior
 		self.collectionView.dataSource	= self
 		self.behavior.delegate = self
-		self.behavior.fetchNext(0) { (_) in
+        self.behavior.fetchNextData(forSection: 0) {
 			self.collectionView.reloadData()
 		}
-	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
 	}
 }
 
@@ -43,8 +39,8 @@ extension LoadingErrorAutomaticViewController: UICollectionViewDataSource {
 
 	func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
 		let footer: LoadingFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: LoadingFooterView.Identifier, for: indexPath) as! LoadingFooterView
-		let statuses = self.behavior.statusesForSection(indexPath.section)
-		footer.set(statuses: statuses)
+		let sectionStatus = self.behavior.sectionStatus(forSection: indexPath.section)
+		footer.set(sectionStatus: sectionStatus)
 		footer.set(indexPath: indexPath)
 		footer.delegate = self
 		return footer
@@ -67,7 +63,7 @@ extension LoadingErrorAutomaticViewController: DGPaginableBehaviorDelegate {
 		return 5
 	}
 
-	func paginableBehavior(_ paginableBehavior: DGPaginableBehavior, fetchDataFrom indexPath: IndexPath, with count: Int, completion: @escaping (Error?, Int) -> Void) {
+	func paginableBehavior(_ paginableBehavior: DGPaginableBehavior, fetchDataFrom indexPath: IndexPath, count: Int, completion: @escaping (Error?, Int) -> Void) {
 		self.tries += 1
 		// Simulating 3 seconds delay
 		DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
@@ -88,7 +84,7 @@ extension LoadingErrorAutomaticViewController: DGPaginableBehaviorDelegate {
 
 extension LoadingErrorAutomaticViewController: LoadingFooterViewDelegate {
 	func footer(_ footer: LoadingFooterView, loadMoreFromIndexPath indexPath: IndexPath) {
-		self.behavior.fetchNext(indexPath.section) { (_) in
+		self.behavior.fetchNextData(forSection: indexPath.section) {
 			self.collectionView.reloadSections([indexPath.section])
 		}
 	}

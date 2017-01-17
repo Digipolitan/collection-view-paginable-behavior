@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DGPaginableBehavior
 
 protocol LoadingFooterViewDelegate: NSObjectProtocol {
 	func footer(_ footer: LoadingFooterView, loadMoreFromIndexPath indexPath: IndexPath)
@@ -27,14 +28,14 @@ class LoadingFooterView: UICollectionReusableView {
 		// Initialization code
 	}
 
-	func set(statuses: (fetching:Bool, done: Bool, error: Error?)) {
+	func set(sectionStatus: DGPaginableBehavior.SectionStatus) {
 		self.btnLoadMore.isHidden = true
-		let title = statuses.error == nil ? "Load more" : "retry"
+		let title = sectionStatus.error == nil ? "Load more" : "retry"
 		self.btnLoadMore.setTitle(title, for: .normal)
 		self.lblLoadedCount.isHidden = true
 
 
-		if statuses.fetching {
+		if sectionStatus.fetching {
 			self.loaderActivity.startAnimating()
 			return;
 		}
@@ -42,18 +43,18 @@ class LoadingFooterView: UICollectionReusableView {
 			self.loaderActivity.stopAnimating()
 		}
 
-		if statuses.error != nil {
+		if sectionStatus.error != nil {
 			self.btnLoadMore.isHidden = false
 			return
 		}
 
-		if statuses.done {
+		if sectionStatus.done {
 			self.loaderActivity.stopAnimating()
 			self.lblLoadedCount.isHidden = false
 			return;
 		}
 
-		if !statuses.fetching {
+		if !sectionStatus.fetching {
 			self.btnLoadMore.isHidden = false
 		}
 	}

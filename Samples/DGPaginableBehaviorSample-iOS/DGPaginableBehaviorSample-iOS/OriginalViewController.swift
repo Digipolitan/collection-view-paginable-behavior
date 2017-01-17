@@ -30,9 +30,4 @@ class OriginalViewController: UIViewController {
 		                             forSupplementaryViewOfKind: UICollectionElementKindSectionFooter,
 		                             withReuseIdentifier: LoadingFooterView.Identifier)
 	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-	}
-	
 }

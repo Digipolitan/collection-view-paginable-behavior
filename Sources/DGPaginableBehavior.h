@@ -1,5 +1,5 @@
-#ifndef _DGFRAMEWORKTEMPLATE_H
-#define _DGFRAMEWORKTEMPLATE_H
+#ifndef _DGCOLLECTIONVIEWPAGINABLEBEHAVIOR_H
+#define _DGCOLLECTIONVIEWPAGINABLEBEHAVIOR_H
 
 #import <Foundation/Foundation.h>
 
@@ -9,4 +9,4 @@ FOUNDATION_EXPORT double DGPaginableBehaviorVersionNumber;
 //! Project version string for DGPaginableBehavior
 FOUNDATION_EXPORT const unsigned char DGPaginableBehaviorVersionString[];
 
-#endif /* _DGFRAMEWORKTEMPLATE_H */
+#endif /* _DGCOLLECTIONVIEWPAGINABLEBEHAVIOR_H */

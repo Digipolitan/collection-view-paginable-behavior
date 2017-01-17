@@ -23,22 +23,17 @@ class ClassicViewController: OriginalViewController {
 		self.collectionView.dataSource	= self
 		self.behavior.delegate = self
 	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-	}
 }
-
 
 extension ClassicViewController: UICollectionViewDataSource {
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return self.behavior.statusesForSection(section).done ? self.users.count : self.users.count + 1
+		return self.users.count + (self.behavior.sectionStatus(forSection: section).done ? 0 : 1)
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		guard indexPath.row < self.users.count else {
 			let cell: LoadingItemCell = (collectionView.dequeueReusableCell(withReuseIdentifier: LoadingItemCell.Identifier, for: indexPath) as? LoadingItemCell)!
-			cell.set(moreToLoad: !self.behavior.statusesForSection(indexPath.section).done)
+			cell.set(moreToLoad: !self.behavior.sectionStatus(forSection: indexPath.section).done)
 			return cell
 		}
 
@@ -58,7 +53,7 @@ extension ClassicViewController: DGPaginableBehaviorDelegate {
 		return 3
 	}
 
-	func paginableBehavior(_ paginableBehavior: DGPaginableBehavior, fetchDataFrom indexPath: IndexPath, with count: Int, completion: @escaping (Error?, Int) -> Void) {
+	func paginableBehavior(_ paginableBehavior: DGPaginableBehavior, fetchDataFrom indexPath: IndexPath, count: Int, completion: @escaping (Error?, Int) -> Void) {
 		// Simulating 3 seconds delay
 		DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
 			let results = User.stub(from: indexPath.row, with: count)

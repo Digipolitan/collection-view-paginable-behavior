@@ -20,13 +20,9 @@ class RawViewController: OriginalViewController {
 		self.behavior.delegate = self
 
 		// initial call to fetch the first chunk of data.
-		self.behavior.fetchNext(0) { _ in
+		self.behavior.fetchNextData(forSection: 0) {
 			self.collectionView.reloadData()
 		}
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 }
 
@@ -44,7 +40,7 @@ extension RawViewController: UICollectionViewDataSource {
 }
 
 extension RawViewController: DGPaginableBehaviorDelegate {
-	func paginableBehavior(_ paginableBehavior: DGPaginableBehavior, fetchDataFrom indexPath: IndexPath, with count: Int, completion: @escaping (Error?, Int) -> Void) {
+	func paginableBehavior(_ paginableBehavior: DGPaginableBehavior, fetchDataFrom indexPath: IndexPath, count: Int, completion: @escaping (Error?, Int) -> Void) {
 		// Simulating 3 seconds delay
 		DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
 			let results = User.stub(from: indexPath.row, with: count)

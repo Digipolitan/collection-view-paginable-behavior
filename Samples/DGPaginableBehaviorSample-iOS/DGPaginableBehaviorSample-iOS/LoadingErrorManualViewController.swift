@@ -22,14 +22,8 @@ class LoadingErrorViewController: OriginalViewController {
 		self.behavior.delegate = self
 	}
 
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-	}
-
 	func setManualMode() {
-		self.behavior.set(options: [
-			.automaticFetch: false
-			])
+        self.behavior.options = DGPaginableBehavior.Options(automaticFetch: false)
 	}
 }
 
@@ -46,7 +40,7 @@ extension LoadingErrorViewController: UICollectionViewDataSource {
 
 	func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
 		let footer: LoadingFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: LoadingFooterView.Identifier, for: indexPath) as! LoadingFooterView
-		footer.set(statuses: self.behavior.statusesForSection(indexPath.section))
+		footer.set(sectionStatus: self.behavior.sectionStatus(forSection: indexPath.section))
 		footer.set(indexPath: indexPath)
 		footer.delegate = self
 		return footer
@@ -69,7 +63,7 @@ extension LoadingErrorViewController: DGPaginableBehaviorDelegate {
 		return 9
 	}
 
-	func paginableBehavior(_ paginableBehavior: DGPaginableBehavior, fetchDataFrom indexPath: IndexPath, with count: Int, completion: @escaping (Error?, Int) -> Void) {
+	func paginableBehavior(_ paginableBehavior: DGPaginableBehavior, fetchDataFrom indexPath: IndexPath, count: Int, completion: @escaping (Error?, Int) -> Void) {
 		self.tries += 1
 		// Simulating 3 seconds delay
 		DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
@@ -91,7 +85,7 @@ extension LoadingErrorViewController: DGPaginableBehaviorDelegate {
 
 extension LoadingErrorViewController: LoadingFooterViewDelegate {
 	func footer(_ footer: LoadingFooterView, loadMoreFromIndexPath indexPath: IndexPath) {
-		self.behavior.fetchNext(indexPath.section) { (_) in
+		self.behavior.fetchNextData(forSection: indexPath.section) {
 			self.collectionView.reloadSections([indexPath.section])
 		}
 	}
