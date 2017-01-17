@@ -1,18 +1,26 @@
-workspace 'DGPaginableBehavior.xcworkspace'
+workspace 'DGCollectionViewPaginableBehavior.xcworkspace'
 
 ## Frameworks targets
 abstract_target 'Frameworks' do
 	use_frameworks!
-	target 'DGPaginableBehavior-iOS' do
+	target 'DGCollectionViewPaginableBehavior-iOS' do
 		platform :ios, '8.0'
+	end
+
+	target 'DGCollectionViewPaginableBehavior-tvOS' do
+		platform :tvos, '9.0'
 	end
 end
 
 ## Tests targets
 abstract_target 'Tests' do
 	use_frameworks!
-	target 'DGPaginableBehaviorTests-iOS' do
+	target 'DGCollectionViewPaginableBehaviorTests-iOS' do
 		platform :ios, '8.0'
+	end
+
+	target 'DGCollectionViewPaginableBehaviorTests-tvOS' do
+		platform :tvos, '9.0'
 	end
 end
 
@@ -20,9 +28,15 @@ end
 abstract_target 'Samples' do
 	use_frameworks!
 
-	pod 'DGCollectionViewGridLayout'
-	target 'DGPaginableBehaviorSample-iOS' do
-		project 'Samples/DGPaginableBehaviorSample-iOS/DGPaginableBehaviorSample-iOS'
+	target 'DGCollectionViewPaginableBehaviorSample-iOS' do
+		project 'Samples/DGCollectionViewPaginableBehaviorSample-iOS/DGCollectionViewPaginableBehaviorSample-iOS'
+        pod 'DGCollectionViewGridLayout'
+
 		platform :ios, '8.0'
+	end
+
+	target 'DGCollectionViewPaginableBehaviorSample-tvOS' do
+		project 'Samples/DGCollectionViewPaginableBehaviorSample-tvOS/DGCollectionViewPaginableBehaviorSample-tvOS'
+		platform :tvos, '9.0'
 	end
 end
