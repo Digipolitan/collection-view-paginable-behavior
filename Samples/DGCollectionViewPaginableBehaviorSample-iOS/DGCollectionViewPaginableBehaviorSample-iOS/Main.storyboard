@@ -351,10 +351,10 @@
             </objects>
             <point key="canvasLocation" x="2406" y="-751"/>
         </scene>
-        <!--Loading Error View Controller-->
+        <!--Loading Error Manual View Controller-->
         <scene sceneID="dYs-EV-STg">
             <objects>
-                <viewController id="c19-bi-maA" customClass="LoadingErrorViewController" customModule="DGCollectionViewPaginableBehaviorSample_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="c19-bi-maA" customClass="LoadingErrorManualViewController" customModule="DGCollectionViewPaginableBehaviorSample_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jXo-Lb-jdV"/>
                         <viewControllerLayoutGuide type="bottom" id="5V6-5a-eDd"/>

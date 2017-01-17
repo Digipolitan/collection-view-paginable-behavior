@@ -9,7 +9,7 @@
 import UIKit
 import DGCollectionViewPaginableBehavior
 
-class LoadingErrorViewController: OriginalViewController {
+class LoadingErrorManualViewController: OriginalViewController {
 	var users: [User] = [User]()
 	let behavior: DGCollectionViewPaginableBehavior = DGCollectionViewPaginableBehavior()
 	var tries: Int = 0
