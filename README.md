@@ -46,7 +46,8 @@ You can customize the component by enabling few options:
 
 ```swift
     var options = DGCollectionViewPaginableBehavior.Options(automaticFetch: false)
-    options.countPerPage = 20
+    options.countPerPage = 20 		// default value used for all section, avoiding to implement the delegate
+    options.animatedUpdates = true	// defines if the method reloadSections will be used after fetching the data
     behavior.options = options
 ```
 
