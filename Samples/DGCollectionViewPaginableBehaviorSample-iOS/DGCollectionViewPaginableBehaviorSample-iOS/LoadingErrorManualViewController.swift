@@ -27,7 +27,7 @@ class LoadingErrorManualViewController: OriginalViewController {
 	}
 }
 
-extension LoadingErrorViewController: UICollectionViewDataSource {
+extension LoadingErrorManualViewController: UICollectionViewDataSource {
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return self.users.count
 	}
@@ -49,7 +49,7 @@ extension LoadingErrorViewController: UICollectionViewDataSource {
 	}
 }
 
-extension LoadingErrorViewController: DGCollectionViewPaginableBehaviorDelegate {
+extension LoadingErrorManualViewController: DGCollectionViewPaginableBehaviorDelegate {
 
 	// MARK: UICollectionViewFlowDelegate
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -85,7 +85,7 @@ extension LoadingErrorViewController: DGCollectionViewPaginableBehaviorDelegate 
 	}
 }
 
-extension LoadingErrorViewController: LoadingFooterViewDelegate {
+extension LoadingErrorManualViewController: LoadingFooterViewDelegate {
 	func footer(_ footer: LoadingFooterView, loadMoreFromIndexPath indexPath: IndexPath) {
 		self.behavior.fetchNextData(forSection: indexPath.section) {
 			self.collectionView.reloadSections([indexPath.section])
