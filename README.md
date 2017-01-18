@@ -78,7 +78,7 @@ the `DGCollectionViewPaginableBehavior`, as you imagine, to adopt a paginable be
 
 ## Work with custom layout
 
-You might want to use custom layout. If so, extend the behavior of the Paginable component. Here an example with our custom layout [DGCollectionViewGridLayout](https://github.com/Digipolitan/collection-view-grid-layout-ios)
+You might want to use custom layout. If so, extend the behavior of the Paginable component. Here an example with our custom layout [DGCollectionViewGridLayout](https://github.com/Digipolitan/collection-view-grid-layout-swift)
 
 ```swift
 /**
