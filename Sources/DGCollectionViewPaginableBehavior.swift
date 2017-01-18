@@ -118,7 +118,6 @@ open class DGCollectionViewPaginableBehavior: NSObject {
 extension DGCollectionViewPaginableBehavior: UICollectionViewDelegateFlowLayout {
 	public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
 		self.delegate?.collectionView?(collectionView, willDisplay: cell, forItemAt: indexPath)
-		(collectionView.collectionViewLayout as UICollectionViewFlowLayout).section
 		// If the element that will be displayed is not the last,
 		// means we did not reach the end of the collection.
 		guard let dataSource = collectionView.dataSource,
@@ -129,7 +128,7 @@ extension DGCollectionViewPaginableBehavior: UICollectionViewDelegateFlowLayout 
 		self.lastIndexes[indexPath.section] = indexPath.row + 1
 
 		let sectionStatus = self.sectionStatus(forSection: indexPath.section)
-		if (self.options.automaticFetch && sectionStatus.error == nil) {
+		if self.options.automaticFetch && sectionStatus.error == nil {
             self.fetchNextData(forSection: indexPath.section) {
                 collectionView.reloadSections([indexPath.section])
             }

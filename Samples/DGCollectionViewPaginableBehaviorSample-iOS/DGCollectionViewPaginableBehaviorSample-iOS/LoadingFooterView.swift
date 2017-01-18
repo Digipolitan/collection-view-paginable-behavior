@@ -34,10 +34,9 @@ class LoadingFooterView: UICollectionReusableView {
 		self.btnLoadMore.setTitle(title, for: .normal)
 		self.lblLoadedCount.isHidden = true
 
-
 		if sectionStatus.fetching {
 			self.loaderActivity.startAnimating()
-			return;
+			return
 		} else {
 			self.loaderActivity.stopAnimating()
 		}
@@ -50,7 +49,7 @@ class LoadingFooterView: UICollectionReusableView {
 		if sectionStatus.done {
 			self.loaderActivity.stopAnimating()
 			self.lblLoadedCount.isHidden = false
-			return;
+			return
 		}
 
 		if !sectionStatus.fetching {

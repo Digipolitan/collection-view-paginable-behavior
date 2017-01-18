@@ -47,7 +47,6 @@ class CustomLayoutViewController: OriginalViewController {
 	}
 }
 
-
 extension CustomLayoutViewController: DGGridLayoutDataSource {
 	// DGGridLayoutDataSource
 	func numberOfColumnsIn(_ collectionView: UICollectionView) -> Int {
@@ -79,9 +78,11 @@ extension CustomLayoutViewController: DGGridLayoutDataSource {
 			return header
 		}
 
-        guard let footer: LoadingFooterView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: LoadingFooterView.Identifier, for: indexPath) as? LoadingFooterView else {
+        guard let footer: LoadingFooterView = collectionView
+			.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: LoadingFooterView.Identifier, for: indexPath) as? LoadingFooterView else {
             fatalError()
         }
+
 		footer.set(sectionStatus: self.behavior.sectionStatus(forSection: indexPath.section))
 		footer.set(indexPath: indexPath)
 		footer.delegate = self

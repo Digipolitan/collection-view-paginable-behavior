@@ -77,7 +77,7 @@ extension LoadingErrorViewController: DGCollectionViewPaginableBehaviorDelegate 
 				completion(error, 0)
 				return
 			}
-			
+
 			let results = User.stub(from: indexPath.row, with: count)
 			self.users.append(contentsOf: results)
 			completion(nil, results.count)

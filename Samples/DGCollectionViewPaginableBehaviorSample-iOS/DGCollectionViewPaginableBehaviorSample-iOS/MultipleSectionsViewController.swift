@@ -37,7 +37,6 @@ class MultipleSectionsViewController: OriginalViewController {
 	}
 }
 
-
 extension MultipleSectionsViewController: UICollectionViewDataSource {
 	func numberOfSections(in collectionView: UICollectionView) -> Int {
 		return self.users.keys.count

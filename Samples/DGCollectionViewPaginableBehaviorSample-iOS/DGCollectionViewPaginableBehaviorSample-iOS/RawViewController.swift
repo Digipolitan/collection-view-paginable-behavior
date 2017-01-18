@@ -26,7 +26,6 @@ class RawViewController: OriginalViewController {
     }
 }
 
-
 extension RawViewController: UICollectionViewDataSource {
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return self.users.count

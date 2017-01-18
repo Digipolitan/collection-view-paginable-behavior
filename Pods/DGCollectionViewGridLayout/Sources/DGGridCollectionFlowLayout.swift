@@ -139,7 +139,7 @@ open class DGCollectionViewGridLayout: UICollectionViewLayout {
 		guard self.numberOfSections > 0 else {
 			return height
 		}
-		
+
 		for section in 0...(self.numberOfSections - 1) {
 			height = height + self.getHeightOf(section: section)
 		}
