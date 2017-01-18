@@ -15,21 +15,31 @@ public protocol DGCollectionViewPaginableBehaviorDelegate: UICollectionViewDeleg
 	*/
 	@objc optional func paginableBehavior(_ paginableBehavior: DGCollectionViewPaginableBehavior, countPerPageInSection section: Int) -> Int
 	/**
-	* Core methods that will be called every time the user reach the end of the collection. Depending on the mode set for automatic fetch.
+	* Core methods that will be called every time the user reach the end of the collection, 
+	* depending on the value set for the automatic fetch option.
 	*/
 	@objc optional func paginableBehavior(_ paginableBehavior: DGCollectionViewPaginableBehavior, fetchDataFrom indexPath: IndexPath, count: Int, completion: @escaping (Error?, Int) -> Void)
 }
 
 open class DGCollectionViewPaginableBehavior: NSObject {
 
+	/**
+	*	Struct used to configure the behavior of the component.
+	*	`automaticFetch`	tells if the component will call the delegate automatically
+							to fetch the next chunk of data at the end of a section,
+	*
+	*	`countPerPage`		default value used for all section, avoiding to implement the delegate,
+	*	`animatedUpdate`	defines if the method reloadSection will be used after fetching the data.
+	*/
     public struct Options: CustomStringConvertible {
-
         public var automaticFetch: Bool
         public var countPerPage: Int
+		public var animatedUpdates: Bool
 
-        public init(automaticFetch: Bool = true, countPerPage: Int = 10) {
+		public init(automaticFetch: Bool = true, countPerPage: Int = 10, animatedUpdates: Bool = false) {
             self.automaticFetch = automaticFetch
             self.countPerPage = countPerPage
+			self.animatedUpdates = animatedUpdates
         }
 
         public var description: String {
@@ -37,16 +47,24 @@ open class DGCollectionViewPaginableBehavior: NSObject {
         }
     }
 
+	/**
+	*	Struct mantaining information of each section.
+	*	`fetching`	tells if the section is currently fetching data,
+	*	`done`		tells if the section has fetched all data and no more data to load,
+	*	`error`		tells if during the last fetch attempt an error occured,
+	*	`index`		the next index to fetch data from.
+	*/
     public struct SectionStatus: CustomStringConvertible {
-
         public var fetching: Bool
         public var done: Bool
         public var error: Error?
+		public var index: Int
 
-        public init(fetching: Bool = false, done: Bool = false, error: Error? = nil) {
+		init(fetching: Bool = false, done: Bool = false, error: Error? = nil) {
             self.fetching = fetching
             self.done = done
             self.error = error
+			self.index = 0
         }
 
         public var description: String {
@@ -55,14 +73,12 @@ open class DGCollectionViewPaginableBehavior: NSObject {
     }
 
 	open var options: Options
-	fileprivate var sectionInfo: [Int: SectionStatus]
-    fileprivate var lastIndexes: [Int: Int]
+	fileprivate var sectionStatuses: [Int: SectionStatus]
 
 	public weak var delegate: DGCollectionViewPaginableBehaviorDelegate?
 
 	public override init() {
-		self.lastIndexes = [Int: Int]()
-		self.sectionInfo = [Int: SectionStatus]()
+		self.sectionStatuses = [Int: SectionStatus]()
 		self.options = Options()
         super.init()
 	}
@@ -84,32 +100,29 @@ open class DGCollectionViewPaginableBehavior: NSObject {
 	}
 
 	public func sectionStatus(forSection section: Int) -> SectionStatus {
-		return self.sectionInfo[section] ?? SectionStatus()
+		return self.sectionStatuses[section] ?? SectionStatus()
 	}
 
 	public func fetchNextData(forSection section: Int, completionHandler: @escaping (Void) -> Void) {
-		let index = self.lastIndexes[section] ?? 0
-		self.lastIndexes[section] = index
-
+		var sectionStatus = self.sectionStatuses[section] ?? SectionStatus()
 		let count = self.delegate?.paginableBehavior?(self, countPerPageInSection: section) ?? self.options.countPerPage
 
-        var sectionStatus = self.sectionInfo[section] ?? SectionStatus()
         guard !sectionStatus.fetching && !sectionStatus.done else {
-            self.sectionInfo[section] = sectionStatus
+            self.sectionStatuses[section] = sectionStatus
             return
         }
 
         sectionStatus.fetching = true
-        self.sectionInfo[section] = sectionStatus
-        let fromIndexPath = IndexPath(item:index, section: section)
+        self.sectionStatuses[section] = sectionStatus
+        let fromIndexPath = IndexPath(item: sectionStatus.index, section: section)
         self.delegate?.paginableBehavior?(self, fetchDataFrom: fromIndexPath, count: count, completion: { (error, dataCount) in
             if error == nil {
                 sectionStatus.done = (dataCount == 0 || dataCount < count)
-                self.lastIndexes[section] = index + count
+                sectionStatus.index = sectionStatus.index + count
             }
             sectionStatus.error = error
             sectionStatus.fetching = false
-            self.sectionInfo[section] = sectionStatus
+            self.sectionStatuses[section] = sectionStatus
             completionHandler()
         })
 	}
@@ -125,12 +138,20 @@ extension DGCollectionViewPaginableBehavior: UICollectionViewDelegateFlowLayout 
 			return
 		}
 
-		self.lastIndexes[indexPath.section] = indexPath.row + 1
+		var sectionStatus = self.sectionStatus(forSection: indexPath.section)
+		sectionStatus.index = sectionStatus.index  + 1
+		self.sectionStatuses[indexPath.section] = sectionStatus
 
-		let sectionStatus = self.sectionStatus(forSection: indexPath.section)
 		if self.options.automaticFetch && sectionStatus.error == nil {
             self.fetchNextData(forSection: indexPath.section) {
-                collectionView.reloadSections([indexPath.section])
+				if self.options.animatedUpdates {
+					collectionView.reloadSections([indexPath.section])
+				}
+				else {
+					UIView.performWithoutAnimation {
+						collectionView.reloadSections([indexPath.section])
+					}
+				}
             }
 		}
 	}
