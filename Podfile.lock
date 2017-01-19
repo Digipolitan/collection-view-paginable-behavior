@@ -1,0 +1,12 @@
+PODS:
+  - DGCollectionViewGridLayout (1.0.1)
+
+DEPENDENCIES:
+  - DGCollectionViewGridLayout
+
+SPEC CHECKSUMS:
+  DGCollectionViewGridLayout: b8c12f40b6544f16193ac804be221973edbe1710
+
+PODFILE CHECKSUM: ffd4186f18c1698639a58c6573380660a2d6fb07
+
+COCOAPODS: 1.1.1
