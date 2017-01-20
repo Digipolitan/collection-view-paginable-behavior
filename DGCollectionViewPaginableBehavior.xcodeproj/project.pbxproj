@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DB1FE81C8DE494682DFA6E2 /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11AFA6DA846EFFAFA025781 /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_iOS.framework */; };
-		59054DE2A040CCB181325728 /* Pods_Frameworks_DGCollectionViewPaginableBehavior_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1FAAB4B725D4D84EFF11F61 /* Pods_Frameworks_DGCollectionViewPaginableBehavior_iOS.framework */; };
+		69AF46C7059F02FD372CA02B /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A28FC220EDA41E3225D6A3C7 /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_iOS.framework */; };
+		74A20F775D16A224B5F5D4BA /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CBE539815550A1BAC7BCAB /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_tvOS.framework */; };
 		A3169DBA1DE05E8300BABAFD /* DGCollectionViewPaginableBehavior.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3169DB01DE05E8300BABAFD /* DGCollectionViewPaginableBehavior.framework */; };
 		A3169DF81DE0718900BABAFD /* DGCollectionViewPaginableBehavior.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3169DEF1DE0718900BABAFD /* DGCollectionViewPaginableBehavior.framework */; };
 		A3169E761DE083D900BABAFD /* DGCollectionViewPaginableBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = A3169E751DE083D900BABAFD /* DGCollectionViewPaginableBehavior.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -17,8 +17,8 @@
 		A38EF2CB1DECF97000637484 /* DGCollectionViewPaginableBehaviorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38EF2C71DECF97000637484 /* DGCollectionViewPaginableBehaviorTests.swift */; };
 		A3D8B9961E2E637F00D6B661 /* DGCollectionViewPaginableBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8B9951E2E637F00D6B661 /* DGCollectionViewPaginableBehavior.swift */; };
 		A3D8B9971E2E637F00D6B661 /* DGCollectionViewPaginableBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8B9951E2E637F00D6B661 /* DGCollectionViewPaginableBehavior.swift */; };
-		B9EC054965B6364DDC73AD77 /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDD7C366D4550D1E7849C90 /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_tvOS.framework */; };
-		BBBD44700DE31D0A10C98154 /* Pods_Frameworks_DGCollectionViewPaginableBehavior_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8CBE3155F090B03E7329E1 /* Pods_Frameworks_DGCollectionViewPaginableBehavior_tvOS.framework */; };
+		B5C732A652E7C1E69DD18C33 /* Pods_Frameworks_DGCollectionViewPaginableBehavior_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25445851C658CF189D0059FB /* Pods_Frameworks_DGCollectionViewPaginableBehavior_iOS.framework */; };
+		F6946A8C7A8502A0210E460B /* Pods_Frameworks_DGCollectionViewPaginableBehavior_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A5BE3A07B2997BBB7665FD /* Pods_Frameworks_DGCollectionViewPaginableBehavior_tvOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C3AAF14BEF43430BB866A9D /* Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS/Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		0FEE501EF6829068C2CC3391 /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS/Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		2B90104FD2AAD9DF09C310FA /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS/Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		2DCC2C54CA4C4473D5F263DF /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS/Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		3FDD7C366D4550D1E7849C90 /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests_DGCollectionViewPaginableBehaviorTests_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42DE53AB9C5F44CEDE207114 /* Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS/Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		46069E99805702A9C65311B9 /* Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS/Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		1FD642671E37B8B924333020 /* Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS/Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		25445851C658CF189D0059FB /* Pods_Frameworks_DGCollectionViewPaginableBehavior_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Frameworks_DGCollectionViewPaginableBehavior_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		298108969308B6E2A9587A2F /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS/Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		325B61338656A5AF8CA5B89E /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS/Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		595834B286B8CEB0B931E81D /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS/Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		61A5BE3A07B2997BBB7665FD /* Pods_Frameworks_DGCollectionViewPaginableBehavior_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Frameworks_DGCollectionViewPaginableBehavior_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28FC220EDA41E3225D6A3C7 /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests_DGCollectionViewPaginableBehaviorTests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3169DB01DE05E8300BABAFD /* DGCollectionViewPaginableBehavior.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DGCollectionViewPaginableBehavior.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3169DB91DE05E8300BABAFD /* DGCollectionViewPaginableBehaviorTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DGCollectionViewPaginableBehaviorTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3169DCC1DE0629100BABAFD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,11 +58,11 @@
 		A3169E751DE083D900BABAFD /* DGCollectionViewPaginableBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGCollectionViewPaginableBehavior.h; sourceTree = "<group>"; };
 		A38EF2C71DECF97000637484 /* DGCollectionViewPaginableBehaviorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGCollectionViewPaginableBehaviorTests.swift; sourceTree = "<group>"; };
 		A3D8B9951E2E637F00D6B661 /* DGCollectionViewPaginableBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGCollectionViewPaginableBehavior.swift; sourceTree = "<group>"; };
-		AE8CBE3155F090B03E7329E1 /* Pods_Frameworks_DGCollectionViewPaginableBehavior_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Frameworks_DGCollectionViewPaginableBehavior_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E11AFA6DA846EFFAFA025781 /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests_DGCollectionViewPaginableBehaviorTests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E598337FF0BB000E62B2F02C /* Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS/Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		F1FAAB4B725D4D84EFF11F61 /* Pods_Frameworks_DGCollectionViewPaginableBehavior_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Frameworks_DGCollectionViewPaginableBehavior_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F87FE7D9ADB2F49E057387F0 /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS/Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		B4CBE539815550A1BAC7BCAB /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests_DGCollectionViewPaginableBehaviorTests_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0D292424D387E8D4F079322 /* Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS/Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D41653C2B373FE09E10C5CCE /* Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS/Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		E3B8048EFBC9DC2E21D9B204 /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS/Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		FFB4846E423F7EC65274EC81 /* Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS/Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59054DE2A040CCB181325728 /* Pods_Frameworks_DGCollectionViewPaginableBehavior_iOS.framework in Frameworks */,
+				B5C732A652E7C1E69DD18C33 /* Pods_Frameworks_DGCollectionViewPaginableBehavior_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3169DBA1DE05E8300BABAFD /* DGCollectionViewPaginableBehavior.framework in Frameworks */,
-				0DB1FE81C8DE494682DFA6E2 /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_iOS.framework in Frameworks */,
+				69AF46C7059F02FD372CA02B /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBBD44700DE31D0A10C98154 /* Pods_Frameworks_DGCollectionViewPaginableBehavior_tvOS.framework in Frameworks */,
+				F6946A8C7A8502A0210E460B /* Pods_Frameworks_DGCollectionViewPaginableBehavior_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,24 +96,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3169DF81DE0718900BABAFD /* DGCollectionViewPaginableBehavior.framework in Frameworks */,
-				B9EC054965B6364DDC73AD77 /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_tvOS.framework in Frameworks */,
+				74A20F775D16A224B5F5D4BA /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		605B00511D05B28432AA4AB5 /* Pods */ = {
+		236253200CDD232EDE397415 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0C3AAF14BEF43430BB866A9D /* Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.debug.xcconfig */,
-				46069E99805702A9C65311B9 /* Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.release.xcconfig */,
-				E598337FF0BB000E62B2F02C /* Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.debug.xcconfig */,
-				42DE53AB9C5F44CEDE207114 /* Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.release.xcconfig */,
-				2B90104FD2AAD9DF09C310FA /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.debug.xcconfig */,
-				2DCC2C54CA4C4473D5F263DF /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.release.xcconfig */,
-				0FEE501EF6829068C2CC3391 /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.debug.xcconfig */,
-				F87FE7D9ADB2F49E057387F0 /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.release.xcconfig */,
+				C0D292424D387E8D4F079322 /* Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.debug.xcconfig */,
+				D41653C2B373FE09E10C5CCE /* Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.release.xcconfig */,
+				FFB4846E423F7EC65274EC81 /* Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.debug.xcconfig */,
+				1FD642671E37B8B924333020 /* Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.release.xcconfig */,
+				298108969308B6E2A9587A2F /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.debug.xcconfig */,
+				595834B286B8CEB0B931E81D /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.release.xcconfig */,
+				325B61338656A5AF8CA5B89E /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.debug.xcconfig */,
+				E3B8048EFBC9DC2E21D9B204 /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -124,8 +124,8 @@
 				A3169DCA1DE0629100BABAFD /* Sources */,
 				A3169DCF1DE062A000BABAFD /* Tests */,
 				A3169DB11DE05E8300BABAFD /* Products */,
-				605B00511D05B28432AA4AB5 /* Pods */,
-				F65B73CD1A9A389084B6D53A /* Frameworks */,
+				236253200CDD232EDE397415 /* Pods */,
+				EA4809BF07C2C68DE792BA25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,13 +170,13 @@
 			path = DGCollectionViewPaginableBehaviorTests;
 			sourceTree = "<group>";
 		};
-		F65B73CD1A9A389084B6D53A /* Frameworks */ = {
+		EA4809BF07C2C68DE792BA25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F1FAAB4B725D4D84EFF11F61 /* Pods_Frameworks_DGCollectionViewPaginableBehavior_iOS.framework */,
-				AE8CBE3155F090B03E7329E1 /* Pods_Frameworks_DGCollectionViewPaginableBehavior_tvOS.framework */,
-				E11AFA6DA846EFFAFA025781 /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_iOS.framework */,
-				3FDD7C366D4550D1E7849C90 /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_tvOS.framework */,
+				25445851C658CF189D0059FB /* Pods_Frameworks_DGCollectionViewPaginableBehavior_iOS.framework */,
+				61A5BE3A07B2997BBB7665FD /* Pods_Frameworks_DGCollectionViewPaginableBehavior_tvOS.framework */,
+				A28FC220EDA41E3225D6A3C7 /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_iOS.framework */,
+				B4CBE539815550A1BAC7BCAB /* Pods_Tests_DGCollectionViewPaginableBehaviorTests_tvOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,13 +207,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3169DC41DE05E8300BABAFD /* Build configuration list for PBXNativeTarget "DGCollectionViewPaginableBehavior-iOS" */;
 			buildPhases = (
-				76459BEE87EE4EC3DA3C38AB /* [CP] Check Pods Manifest.lock */,
+				A1832D2A668955FA5DFD85AB /* [CP] Check Pods Manifest.lock */,
 				A3169DAB1DE05E8300BABAFD /* Sources */,
 				A3169DAC1DE05E8300BABAFD /* Frameworks */,
 				A3169DAE1DE05E8300BABAFD /* Resources */,
 				A3169DD81DE0654400BABAFD /* Swiftlint */,
 				A3169E631DE0804300BABAFD /* Headers */,
-				AAC29AB177D2D44DE30899FC /* [CP] Copy Pods Resources */,
+				12B20D8C8DA2A498B7974C8F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,12 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3169DC71DE05E8300BABAFD /* Build configuration list for PBXNativeTarget "DGCollectionViewPaginableBehaviorTests-iOS" */;
 			buildPhases = (
-				F0FC235536E9C36B4EF7D859 /* [CP] Check Pods Manifest.lock */,
+				B6CCA52988AD1A8E56EA5346 /* [CP] Check Pods Manifest.lock */,
 				A3169DB51DE05E8300BABAFD /* Sources */,
 				A3169DB61DE05E8300BABAFD /* Frameworks */,
 				A3169DB71DE05E8300BABAFD /* Resources */,
-				EA784B8CDE7D01366D523307 /* [CP] Embed Pods Frameworks */,
-				B9B019B4582D048EC94B4AB9 /* [CP] Copy Pods Resources */,
+				8ACFD87FD1CCB4C540F6EF16 /* [CP] Embed Pods Frameworks */,
+				C4101AB28A6CB3269177E9F4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,13 +249,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3169E001DE0718900BABAFD /* Build configuration list for PBXNativeTarget "DGCollectionViewPaginableBehavior-tvOS" */;
 			buildPhases = (
-				0FEB6A455D8A37A8237EEF09 /* [CP] Check Pods Manifest.lock */,
+				BF20B73948729D98B58C1BAD /* [CP] Check Pods Manifest.lock */,
 				A3169DEA1DE0718900BABAFD /* Sources */,
 				A3169DEB1DE0718900BABAFD /* Frameworks */,
 				A3169DED1DE0718900BABAFD /* Resources */,
 				A3169E061DE0727A00BABAFD /* Swiftlint */,
 				A3169E281DE07B0500BABAFD /* Headers */,
-				496FC1D990DF706E700E31AC /* [CP] Copy Pods Resources */,
+				93A5DF39460AE963FDEBC423 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,12 +270,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3169E031DE0718900BABAFD /* Build configuration list for PBXNativeTarget "DGCollectionViewPaginableBehaviorTests-tvOS" */;
 			buildPhases = (
-				BCD36864A58A7B29649BB04C /* [CP] Check Pods Manifest.lock */,
+				852BD2AB0AB153B05271B58F /* [CP] Check Pods Manifest.lock */,
 				A3169DF31DE0718900BABAFD /* Sources */,
 				A3169DF41DE0718900BABAFD /* Frameworks */,
 				A3169DF51DE0718900BABAFD /* Resources */,
-				13DDB7A11CAF6B0FFDA51417 /* [CP] Embed Pods Frameworks */,
-				EE649E03E9492BF08805627F /* [CP] Copy Pods Resources */,
+				3B4AA80591D1854AC24BA049 /* [CP] Embed Pods Frameworks */,
+				FCE3EA4FCB8C302849275DC8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -373,22 +373,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0FEB6A455D8A37A8237EEF09 /* [CP] Check Pods Manifest.lock */ = {
+		12B20D8C8DA2A498B7974C8F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS/Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		13DDB7A11CAF6B0FFDA51417 /* [CP] Embed Pods Frameworks */ = {
+		3B4AA80591D1854AC24BA049 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -403,7 +403,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS/Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		496FC1D990DF706E700E31AC /* [CP] Copy Pods Resources */ = {
+		852BD2AB0AB153B05271B58F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8ACFD87FD1CCB4C540F6EF16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS/Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93A5DF39460AE963FDEBC423 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -418,7 +448,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS/Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		76459BEE87EE4EC3DA3C38AB /* [CP] Check Pods Manifest.lock */ = {
+		A1832D2A668955FA5DFD85AB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -461,22 +491,37 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
-		AAC29AB177D2D44DE30899FC /* [CP] Copy Pods Resources */ = {
+		B6CCA52988AD1A8E56EA5346 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS/Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B9B019B4582D048EC94B4AB9 /* [CP] Copy Pods Resources */ = {
+		BF20B73948729D98B58C1BAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4101AB28A6CB3269177E9F4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -491,37 +536,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS/Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BCD36864A58A7B29649BB04C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		EA784B8CDE7D01366D523307 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS/Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EE649E03E9492BF08805627F /* [CP] Copy Pods Resources */ = {
+		FCE3EA4FCB8C302849275DC8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -534,21 +549,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS/Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0FC235536E9C36B4EF7D859 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -703,7 +703,7 @@
 		};
 		A3169DC51DE05E8300BABAFD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C3AAF14BEF43430BB866A9D /* Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.debug.xcconfig */;
+			baseConfigurationReference = C0D292424D387E8D4F079322 /* Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -725,7 +725,7 @@
 		};
 		A3169DC61DE05E8300BABAFD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46069E99805702A9C65311B9 /* Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.release.xcconfig */;
+			baseConfigurationReference = D41653C2B373FE09E10C5CCE /* Pods-Frameworks-DGCollectionViewPaginableBehavior-iOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -746,7 +746,7 @@
 		};
 		A3169DC81DE05E8300BABAFD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B90104FD2AAD9DF09C310FA /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.debug.xcconfig */;
+			baseConfigurationReference = 298108969308B6E2A9587A2F /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -760,7 +760,7 @@
 		};
 		A3169DC91DE05E8300BABAFD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DCC2C54CA4C4473D5F263DF /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.release.xcconfig */;
+			baseConfigurationReference = 595834B286B8CEB0B931E81D /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -774,7 +774,7 @@
 		};
 		A3169E011DE0718900BABAFD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E598337FF0BB000E62B2F02C /* Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.debug.xcconfig */;
+			baseConfigurationReference = FFB4846E423F7EC65274EC81 /* Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -798,7 +798,7 @@
 		};
 		A3169E021DE0718900BABAFD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42DE53AB9C5F44CEDE207114 /* Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.release.xcconfig */;
+			baseConfigurationReference = 1FD642671E37B8B924333020 /* Pods-Frameworks-DGCollectionViewPaginableBehavior-tvOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -821,7 +821,7 @@
 		};
 		A3169E041DE0718900BABAFD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FEE501EF6829068C2CC3391 /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 325B61338656A5AF8CA5B89E /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -837,7 +837,7 @@
 		};
 		A3169E051DE0718900BABAFD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F87FE7D9ADB2F49E057387F0 /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.release.xcconfig */;
+			baseConfigurationReference = E3B8048EFBC9DC2E21D9B204 /* Pods-Tests-DGCollectionViewPaginableBehaviorTests-tvOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CURRENT_PROJECT_VERSION = 1;
