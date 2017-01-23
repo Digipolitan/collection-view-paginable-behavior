@@ -1,6 +1,0 @@
-framework module DGCollectionViewGridLayout {
-  umbrella header "DGCollectionViewGridLayout-umbrella.h"
-
-  export *
-  module * { export * }
-}
