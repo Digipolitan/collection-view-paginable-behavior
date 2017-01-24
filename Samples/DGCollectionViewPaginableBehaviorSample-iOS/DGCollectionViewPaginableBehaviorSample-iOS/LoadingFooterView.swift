@@ -9,7 +9,7 @@
 import UIKit
 import DGCollectionViewPaginableBehavior
 
-protocol LoadingFooterViewDelegate: NSObjectProtocol {
+protocol LoadingFooterViewDelegate: class, NSObjectProtocol {
 	func footer(_ footer: LoadingFooterView, loadMoreFromIndexPath indexPath: IndexPath)
 }
 
@@ -22,11 +22,6 @@ class LoadingFooterView: UICollectionReusableView {
 
 	private var indexPath: IndexPath?
 	weak var delegate: LoadingFooterViewDelegate?
-
-	override func awakeFromNib() {
-		super.awakeFromNib()
-		// Initialization code
-	}
 
 	func set(sectionStatus: DGCollectionViewPaginableBehavior.SectionStatus) {
 		self.btnLoadMore.isHidden = true

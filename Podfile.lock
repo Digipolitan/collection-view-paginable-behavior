@@ -1,11 +1,11 @@
 PODS:
-  - DGCollectionViewGridLayout (1.0.3)
+  - DGCollectionViewGridLayout (1.0.5)
 
 DEPENDENCIES:
   - DGCollectionViewGridLayout
 
 SPEC CHECKSUMS:
-  DGCollectionViewGridLayout: 90b819f8a43df505335243e4419ba8dd656c3d7b
+  DGCollectionViewGridLayout: de5b2d3afb546076921eeb5ee417b6148ca13b13
 
 PODFILE CHECKSUM: ffd4186f18c1698639a58c6573380660a2d6fb07
 
