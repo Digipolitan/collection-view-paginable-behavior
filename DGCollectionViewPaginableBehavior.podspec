@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = "DGCollectionViewPaginableBehavior"
-s.version = "1.0.1"
+s.version = "1.0.2"
 s.summary = "Allows you to paginate your collection of data with only few lines of code"
 s.homepage = "https://github.com/Digipolitan/collection-view-paginable-behavior-swift"
 s.authors = "Digipolitan"

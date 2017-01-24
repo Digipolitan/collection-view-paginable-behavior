@@ -7,7 +7,9 @@ DGCollectionViewPaginableBehavior
 [![Platform](https://img.shields.io/cocoapods/p/DGCollectionViewPaginableBehavior.svg?style=flat)](http://cocoadocs.org/docsets/DGCollectionViewPaginableBehavior)
 [![Twitter](https://img.shields.io/badge/twitter-@Digipolitan-blue.svg?style=flat)](http://twitter.com/Digipolitan)
 
-The PaginableBehavior is a partial implentation of a `UICollectionViewDelegateFlowLayout` that allows you to paginate your collection of data with only few lines of code.
+The `PaginableBehavior` is a partial implentation of a `UICollectionViewDelegateFlowLayout` that allows you to paginate your collection of data with only few lines of code.
+
+![Demo](https://github.com/Digipolitan/collection-view-paginable-behavior-swift/blob/develop/Screenshots/capture.gif?raw=true "Demo")
 
 ## Getting Started
 

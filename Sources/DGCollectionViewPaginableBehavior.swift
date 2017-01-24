@@ -118,7 +118,7 @@ open class DGCollectionViewPaginableBehavior: NSObject {
         self.delegate?.paginableBehavior?(self, fetchDataFrom: fromIndexPath, count: count, completion: { (error, dataCount) in
             if error == nil {
                 sectionStatus.done = (dataCount == 0 || dataCount < count)
-                sectionStatus.index = sectionStatus.index + count
+                sectionStatus.index += count
             }
             sectionStatus.error = error
             sectionStatus.fetching = false
@@ -138,16 +138,13 @@ extension DGCollectionViewPaginableBehavior: UICollectionViewDelegateFlowLayout 
 			return
 		}
 
-		var sectionStatus = self.sectionStatus(forSection: indexPath.section)
-		sectionStatus.index = sectionStatus.index  + 1
-		self.sectionStatuses[indexPath.section] = sectionStatus
+		let sectionStatus = self.sectionStatus(forSection: indexPath.section)
 
 		if self.options.automaticFetch && sectionStatus.error == nil {
             self.fetchNextData(forSection: indexPath.section) {
 				if self.options.animatedUpdates {
 					collectionView.reloadSections([indexPath.section])
-				}
-				else {
+				} else {
 					UIView.performWithoutAnimation {
 						collectionView.reloadSections([indexPath.section])
 					}

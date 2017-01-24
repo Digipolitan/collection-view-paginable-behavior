@@ -47,9 +47,9 @@ class CustomLayoutViewController: OriginalViewController {
 	}
 }
 
-extension CustomLayoutViewController: DGGridLayoutDataSource {
+extension CustomLayoutViewController: DGCollectionViewGridLayoutDataSource {
 	// DGGridLayoutDataSource
-	func numberOfColumnsIn(_ collectionView: UICollectionView) -> Int {
+	private func numberOfColumns(_ collectionView: UICollectionView) -> Int {
 		return 2
 	}
 
@@ -125,7 +125,7 @@ Since the Paginable behavior is a partial implementation of UICollecitonViewDele
 It's the direct instance interacting with the collection View.
 If your custom layout needs a delegate with specific methods, just extend the behavior of the Paginable component.
 **/
-extension DGCollectionViewPaginableBehavior: DGGridLayoutDelegate {
+extension DGCollectionViewPaginableBehavior: DGCollectionViewGridLayoutDelegate {
 	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: DGCollectionViewGridLayout, heightForItemAtIndexPath indexPath: IndexPath, columnWidth: CGFloat) -> CGFloat {
 		return 90
 	}
