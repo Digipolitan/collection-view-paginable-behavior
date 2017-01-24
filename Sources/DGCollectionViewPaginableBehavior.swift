@@ -138,7 +138,7 @@ extension DGCollectionViewPaginableBehavior: UICollectionViewDelegateFlowLayout 
 			return
 		}
 
-		var sectionStatus = self.sectionStatus(forSection: indexPath.section)
+		let sectionStatus = self.sectionStatus(forSection: indexPath.section)
 
 		if self.options.automaticFetch && sectionStatus.error == nil {
             self.fetchNextData(forSection: indexPath.section) {
