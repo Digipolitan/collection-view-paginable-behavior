@@ -12,7 +12,8 @@ import DGCollectionViewPaginableBehavior
 class ClassicViewController: OriginalViewController {
 	var users: [User] = [User]()
 	let behavior: DGCollectionViewPaginableBehavior = DGCollectionViewPaginableBehavior()
-
+	let control = UIRefreshControl()
+	var refreshing: Bool = false
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
@@ -22,6 +23,26 @@ class ClassicViewController: OriginalViewController {
 		self.collectionView.delegate	= self.behavior
 		self.collectionView.dataSource	= self
 		self.behavior.delegate = self
+		
+		self.control.addTarget(self, action: #selector(refresh), for: UIControlEvents.valueChanged)
+		if #available(iOS 10.0, *) {
+			self.collectionView.refreshControl = self.control
+		} else {
+			// Fallback on earlier versions
+		}
+	}
+
+	func refresh() {
+		self.refreshing = true
+		self.users.removeAll()
+		self.behavior.reloadData()
+		DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+			self.control.endRefreshing()
+			self.refreshing = false
+			self.behavior.fetchNextData(forSection: 0) {
+				self.collectionView.reloadData()
+			}
+		}
 	}
 }
 
@@ -33,7 +54,9 @@ extension ClassicViewController: UICollectionViewDataSource {
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		guard indexPath.row < self.users.count else {
 			let cell: LoadingItemCell = (collectionView.dequeueReusableCell(withReuseIdentifier: LoadingItemCell.Identifier, for: indexPath) as? LoadingItemCell)!
-			cell.set(moreToLoad: !self.behavior.sectionStatus(forSection: indexPath.section).done)
+			if !self.refreshing {
+				cell.set(moreToLoad: !self.behavior.sectionStatus(forSection: indexPath.section).done)
+			}
 			return cell
 		}
 
