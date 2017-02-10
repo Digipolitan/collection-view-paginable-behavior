@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 `collection-view-paginable-behavior-swift` adheres to [Semantic Versioning](http://semver.org/).
 ---
 
+## [1.0.3](https://github.com/Digipolitan/collection-view-paginable-behavior/releases/tag/v1.0.3)
+
+updated samples
+added endpoint to reload data and fetched indexes
+
+---
+
 ## [1.0.2](https://github.com/Digipolitan/collection-view-paginable-behavior/releases/tag/v1.0.2)
 
 update const
