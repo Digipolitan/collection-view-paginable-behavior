@@ -1,15 +1,16 @@
 //
-//  ClassicViewController.swift
+//  PullToRefreshViewController.swift
 //  DGCollectionViewPaginableBehaviorSample-iOS
 //
-//  Created by Julien Sarazin on 16/01/2017.
+//  Created by Julien Sarazin on 10/02/2017.
 //  Copyright © 2017 Digipolitan. All rights reserved.
 //
+
 
 import UIKit
 import DGCollectionViewPaginableBehavior
 
-class ClassicViewController: OriginalViewController {
+class PullToRefreshViewController: OriginalViewController {
 	var users: [User] = [User]()
 	let behavior: DGCollectionViewPaginableBehavior = DGCollectionViewPaginableBehavior()
 	let control = UIRefreshControl()
@@ -23,7 +24,7 @@ class ClassicViewController: OriginalViewController {
 		self.collectionView.delegate	= self.behavior
 		self.collectionView.dataSource	= self
 		self.behavior.delegate = self
-		
+
 		self.control.addTarget(self, action: #selector(refresh), for: UIControlEvents.valueChanged)
 		if #available(iOS 10.0, *) {
 			self.collectionView.refreshControl = self.control
@@ -33,6 +34,13 @@ class ClassicViewController: OriginalViewController {
 	}
 
 	func refresh() {
+		self.control.alpha = 0
+		let status = self.behavior.sectionStatus(forSection: 0)
+		guard !status.fetching else {
+			self.control.endRefreshing()
+			return
+		}
+		self.control.alpha = 1
 		self.refreshing = true
 		self.users.removeAll()
 		self.behavior.reloadData()
@@ -46,7 +54,7 @@ class ClassicViewController: OriginalViewController {
 	}
 }
 
-extension ClassicViewController: UICollectionViewDataSource {
+extension PullToRefreshViewController: UICollectionViewDataSource {
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return self.users.count + (self.behavior.sectionStatus(forSection: section).done ? 0 : 1)
 	}
@@ -66,7 +74,7 @@ extension ClassicViewController: UICollectionViewDataSource {
 	}
 }
 
-extension ClassicViewController: DGCollectionViewPaginableBehaviorDelegate {
+extension PullToRefreshViewController: DGCollectionViewPaginableBehaviorDelegate {
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		return CGSize(width: self.collectionView.bounds.width / 3.5,
 		              height: 200)

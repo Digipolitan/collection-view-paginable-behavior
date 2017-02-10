@@ -31,6 +31,7 @@
 		A3D8B9C31E2E64E000D6B661 /* UserItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D8B9BB1E2E64E000D6B661 /* UserItemCell.swift */; };
 		A3D8B9C41E2E64E000D6B661 /* UserItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3D8B9BC1E2E64E000D6B661 /* UserItemCell.xib */; };
 		A3D8B9C61E2E655000D6B661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D8B9C51E2E655000D6B661 /* Main.storyboard */; };
+		AE7DFC651E4DD4AB0051267D /* PullToRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7DFC641E4DD4AB0051267D /* PullToRefreshViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,6 +79,7 @@
 		A3D8B9BB1E2E64E000D6B661 /* UserItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserItemCell.swift; sourceTree = "<group>"; };
 		A3D8B9BC1E2E64E000D6B661 /* UserItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserItemCell.xib; sourceTree = "<group>"; };
 		A3D8B9C51E2E655000D6B661 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AE7DFC641E4DD4AB0051267D /* PullToRefreshViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefreshViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			children = (
 				A3D8B9A71E2E647F00D6B661 /* OriginalViewController.swift */,
 				A3D8B9A21E2E645800D6B661 /* Raw */,
+				AE7DFC631E4DD48E0051267D /* PullToRefresh */,
 				A3D8B9A11E2E644E00D6B661 /* MultipleSections */,
 				A3D8B9A01E2E644600D6B661 /* ManualMode */,
 				A3D8B99F1E2E643600D6B661 /* LoadingError */,
@@ -236,6 +239,14 @@
 				A3D8B9AD1E2E649F00D6B661 /* LoadingErrorManualViewController.swift */,
 			);
 			name = Manual;
+			sourceTree = "<group>";
+		};
+		AE7DFC631E4DD48E0051267D /* PullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				AE7DFC641E4DD4AB0051267D /* PullToRefreshViewController.swift */,
+			);
+			name = PullToRefresh;
 			sourceTree = "<group>";
 		};
 		B8FF5AA30A09A2E69BAC9EB0 /* Pods */ = {
@@ -390,6 +401,7 @@
 				A3D8B9B41E2E64CF00D6B661 /* ClassicViewController.swift in Sources */,
 				A3D8B99C1E2E641B00D6B661 /* User.swift in Sources */,
 				A3D8B9AE1E2E649F00D6B661 /* LoadingErrorManualViewController.swift in Sources */,
+				AE7DFC651E4DD4AB0051267D /* PullToRefreshViewController.swift in Sources */,
 				A3D8B9C31E2E64E000D6B661 /* UserItemCell.swift in Sources */,
 				A3D8B9A61E2E647700D6B661 /* RawViewController.swift in Sources */,
 			);
