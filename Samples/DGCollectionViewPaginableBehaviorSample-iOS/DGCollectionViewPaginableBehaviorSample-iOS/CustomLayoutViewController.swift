@@ -126,15 +126,15 @@ It's the direct instance interacting with the collection View.
 If your custom layout needs a delegate with specific methods, just extend the behavior of the Paginable component.
 **/
 extension DGCollectionViewPaginableBehavior: DGCollectionViewGridLayoutDelegate {
-	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: DGCollectionViewGridLayout, heightForItemAtIndexPath indexPath: IndexPath, columnWidth: CGFloat) -> CGFloat {
+	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: DGCollectionViewGridLayout, heightForItemAt indexPath: IndexPath, columnWidth: CGFloat) -> CGFloat {
+		return 150
+	}
+
+	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: DGCollectionViewGridLayout, heightForFooterIn section: Int) -> CGFloat {
 		return 90
 	}
 
-	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: DGCollectionViewGridLayout, heightForHeaderInSection section: Int) -> CGFloat {
+	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: DGCollectionViewGridLayout, heightForHeaderIn section: Int) -> CGFloat {
 		return 42
-	}
-
-	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: DGCollectionViewGridLayout, heightForFooterInSection section: Int) -> CGFloat {
-		return 90
 	}
 }

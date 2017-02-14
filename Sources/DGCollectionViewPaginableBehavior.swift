@@ -60,11 +60,11 @@ open class DGCollectionViewPaginableBehavior: NSObject {
         public var error: Error?
 		public var index: Int
 
-		init(fetching: Bool = false, done: Bool = false, error: Error? = nil) {
+		init(index: Int = 0, fetching: Bool = false, done: Bool = false, error: Error? = nil) {
             self.fetching = fetching
             self.done = done
             self.error = error
-			self.index = 0
+			self.index = index
         }
 
         public var description: String {
@@ -106,6 +106,16 @@ open class DGCollectionViewPaginableBehavior: NSObject {
 
 	public func fetchNextData(forSection section: Int, completionHandler: @escaping (Void) -> Void) {
 		var sectionStatus = self.sectionStatuses[section] ?? SectionStatus()
+
+		if self.sectionStatuses[section] == nil {
+			guard let collectionView = self.collectionView else {
+				return
+			}
+
+			let index = collectionView.dataSource?.collectionView(collectionView, numberOfItemsInSection: section) ?? 0
+			sectionStatus = SectionStatus(index: index)
+		}
+
 		let count = self.delegate?.paginableBehavior?(self, countPerPageInSection: section) ?? self.options.countPerPage
 
         guard !sectionStatus.fetching && !sectionStatus.done else {
