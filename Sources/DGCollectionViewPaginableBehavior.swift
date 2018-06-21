@@ -19,6 +19,10 @@ public protocol DGCollectionViewPaginableBehaviorDelegate: UICollectionViewDeleg
 	* depending on the value set for the automatic fetch option.
 	*/
 	@objc optional func paginableBehavior(_ paginableBehavior: DGCollectionViewPaginableBehavior, fetchDataFrom indexPath: IndexPath, count: Int, completion: @escaping (Error?, Int) -> Void)
+    /**
+    * The method will be called every time the automatic fetch is completed.
+    */
+    @objc optional func paginableBehavior(_ paginableBehavior: DGCollectionViewPaginableBehavior, didAutoFetchDataFor section: Int)
 }
 
 open class DGCollectionViewPaginableBehavior: NSObject {
@@ -166,6 +170,7 @@ extension DGCollectionViewPaginableBehavior: UICollectionViewDelegateFlowLayout 
 						collectionView.reloadSections([indexPath.section])
 					}
 				}
+                self.delegate?.paginableBehavior?(self, didAutoFetchDataFor: indexPath.section)
             }
 		}
 	}
