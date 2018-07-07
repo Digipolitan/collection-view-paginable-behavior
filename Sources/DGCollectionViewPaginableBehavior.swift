@@ -19,6 +19,10 @@ public protocol DGCollectionViewPaginableBehaviorDelegate: UICollectionViewDeleg
 	* depending on the value set for the automatic fetch option.
 	*/
 	@objc optional func paginableBehavior(_ paginableBehavior: DGCollectionViewPaginableBehavior, fetchDataFrom indexPath: IndexPath, count: Int, completion: @escaping (Error?, Int) -> Void)
+    /**
+    * The method will be called every time the automatic fetch is completed.
+    */
+    @objc optional func paginableBehavior(_ paginableBehavior: DGCollectionViewPaginableBehavior, didAutoFetchDataFor section: Int)
 }
 
 open class DGCollectionViewPaginableBehavior: NSObject {
@@ -68,7 +72,7 @@ open class DGCollectionViewPaginableBehavior: NSObject {
         }
 
         public var description: String {
-            return "[DGCollectionViewPaginableBehavior.SectionStatus fetching:\(self.fetching), done:\(self.done), error:\(self.error)]"
+            return "[DGCollectionViewPaginableBehavior.SectionStatus fetching:\(self.fetching), done:\(self.done), error:\(String(describing: self.error))]"
         }
     }
 
@@ -104,7 +108,7 @@ open class DGCollectionViewPaginableBehavior: NSObject {
 		return self.sectionStatuses[section] ?? SectionStatus()
 	}
 
-	public func fetchNextData(forSection section: Int, completionHandler: @escaping (Void) -> Void) {
+    public func fetchNextData(forSection section: Int, completionHandler: @escaping () -> Void) {
 		var sectionStatus = self.sectionStatuses[section] ?? SectionStatus()
 
 		if self.sectionStatuses[section] == nil {
@@ -166,6 +170,7 @@ extension DGCollectionViewPaginableBehavior: UICollectionViewDelegateFlowLayout 
 						collectionView.reloadSections([indexPath.section])
 					}
 				}
+                self.delegate?.paginableBehavior?(self, didAutoFetchDataFor: indexPath.section)
             }
 		}
 	}
