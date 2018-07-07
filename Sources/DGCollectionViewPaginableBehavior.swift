@@ -72,7 +72,7 @@ open class DGCollectionViewPaginableBehavior: NSObject {
         }
 
         public var description: String {
-            return "[DGCollectionViewPaginableBehavior.SectionStatus fetching:\(self.fetching), done:\(self.done), error:\(self.error)]"
+            return "[DGCollectionViewPaginableBehavior.SectionStatus fetching:\(self.fetching), done:\(self.done), error:\(String(describing: self.error))]"
         }
     }
 
@@ -108,7 +108,7 @@ open class DGCollectionViewPaginableBehavior: NSObject {
 		return self.sectionStatuses[section] ?? SectionStatus()
 	}
 
-	public func fetchNextData(forSection section: Int, completionHandler: @escaping (Void) -> Void) {
+    public func fetchNextData(forSection section: Int, completionHandler: @escaping () -> Void) {
 		var sectionStatus = self.sectionStatuses[section] ?? SectionStatus()
 
 		if self.sectionStatuses[section] == nil {
